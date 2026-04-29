@@ -119,18 +119,18 @@ button {
 }
 
 /* Luxury Header Styling */
-header {
+header.fixed {
     z-index: 110 !important;
     transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     height: 6rem; /* h-24 */
 }
 
-header.header-scrolled {
+header.fixed.header-scrolled {
     height: 5rem; /* h-20 */
 }
 
 @media (max-width: 768px) {
-    header, header.header-scrolled {
+    header.fixed, header.fixed.header-scrolled {
         height: 5rem !important; /* Always h-20 on mobile */
     }
     header .container {
@@ -157,8 +157,8 @@ header.header-scrolled {
 /* Responsive Typography Adjustments */
 @media (max-width: 640px) {
     h1 {
-        font-size: 2.5rem !important;
-        line-height: 1.1 !important;
+        font-size: 2.25rem !important;
+        line-height: 1.2 !important;
         letter-spacing: -0.04em !important;
     }
     h2 {
@@ -195,7 +195,7 @@ header.header-scrolled {
         padding-bottom: 3.5rem !important;
     }
     .pt-52 {
-        padding-top: 7rem !important;
+        padding-top: 8rem !important;
     }
 }
 
@@ -217,6 +217,86 @@ header.header-scrolled {
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
+
+/* Blog Post Typography and Layout */
+.prose {
+    color: var(--primary-light);
+    line-height: 1.8;
+}
+
+.prose h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    color: white;
+    font-style: italic;
+    font-family: var(--font-display);
+    font-weight: 900;
+}
+
+.prose h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: white;
+    font-family: var(--font-display);
+}
+
+.prose p {
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.prose ul, .prose ol {
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.prose li {
+    margin-bottom: 1rem;
+    position: relative;
+    list-style: none;
+}
+
+.prose ul li::before {
+    content: "—";
+    color: var(--primary);
+    position: absolute;
+    left: -1.5rem;
+    font-weight: bold;
+}
+
+.prose strong {
+    color: white;
+    font-weight: 700;
+}
+
+.cta-box {
+    background: rgba(232, 132, 42, 0.05);
+    border: 1px solid rgba(232, 132, 42, 0.1);
+    padding: 3.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 640px) {
+    .prose h2 {
+        font-size: 1.85rem;
+        margin-top: 2.5rem;
+    }
+    .cta-box {
+        padding: 2.5rem 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .prose p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+}
 
 /* Luxury Divider */
 .luxury-line {
