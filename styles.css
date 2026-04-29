@@ -187,8 +187,25 @@ header.fixed.header-scrolled {
     .p-12, .p-10, .p-14 {
         padding: 1.5rem !important;
     }
-    .rounded-\[4rem\], .rounded-\[3rem\] {
+    .rounded-\[4rem\], .rounded-\[3rem\], .rounded-\[2\.5rem\] {
         border-radius: 1.75rem !important;
+    }
+    .blog-card a {
+        aspect-ratio: 16 / 10 !important;
+    }
+    article header [class*="aspect-video"] {
+        aspect-ratio: 16 / 10 !important;
+    }
+    @media (min-width: 768px) {
+        .blog-card a {
+            aspect-ratio: 4 / 5 !important;
+        }
+        article header [class*="aspect-video"] {
+            aspect-ratio: 16 / 9 !important;
+        }
+    }
+    .blog-post img {
+        filter: none !important;
     }
     section {
         padding-top: 3.5rem !important;
