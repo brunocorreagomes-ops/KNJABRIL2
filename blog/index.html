@@ -32,7 +32,9 @@
                     },
                 }
             }
-        <style>
+        }
+    </script>
+    <style>
         .filter-btn {
             @apply px-6 py-2.5 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-primary-light/60 transition-all duration-300 whitespace-nowrap;
         }
@@ -392,6 +394,7 @@
                     <div class="mt-4 text-center">
                         <p class="text-[9px] text-white/20 uppercase tracking-[0.3em] font-bold">*Link de parceiro Civitatis — Planeje seus passeios com antecedência</p>
                     </div>
+                </div>
                 <!-- Pagination -->
                 <div class="flex items-center justify-center gap-6 mt-32 reveal reveal-up">
                     <button id="prev-page" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all disabled:opacity-20 disabled:cursor-not-allowed">
@@ -486,6 +489,9 @@
             const sortSelect = document.getElementById('sort-date');
             const searchInput = document.getElementById('search-blog');
 
+            const itemsPerPage = 6;
+            let currentPage = 1;
+
             function updateGrid() {
                 const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
                 const sortOrder = sortSelect.value;
@@ -510,6 +516,14 @@
                     return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
                 });
 
+                // Pagination logic
+                const totalPages = Math.ceil(filteredPosts.length / itemsPerPage);
+                if (currentPage > totalPages) currentPage = 1;
+
+                const start = (currentPage - 1) * itemsPerPage;
+                const end = start + itemsPerPage;
+                const paginatedPosts = filteredPosts.slice(start, end);
+
                 // Clear and Re-append
                 grid.innerHTML = '';
                 
@@ -523,24 +537,80 @@
                     `;
                     lucide.createIcons();
                 } else {
-                    filteredPosts.forEach(post => {
+                    paginatedPosts.forEach(post => {
                         post.classList.remove('hidden', 'active');
                         grid.appendChild(post);
                         setTimeout(() => post.classList.add('active'), 50);
                     });
                 }
+
+                // Update pagination buttons
+                updatePagination(totalPages);
             }
+
+            function updatePagination(totalPages) {
+                const prevBtn = document.getElementById('prev-page');
+                const nextBtn = document.getElementById('next-page');
+                const pageNumbers = document.getElementById('page-numbers');
+
+                prevBtn.disabled = currentPage === 1;
+                nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+
+                pageNumbers.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const btn = document.createElement('button');
+                    btn.textContent = i;
+                    btn.className = `w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-[10px] font-bold transition-all ${i === currentPage ? 'bg-primary border-primary text-white' : 'hover:border-primary/50 text-white/40'}`;
+                    btn.onclick = () => {
+                        currentPage = i;
+                        updateGrid();
+                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                    };
+                    pageNumbers.appendChild(btn);
+                }
+            }
+
+            document.getElementById('prev-page').onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updateGrid();
+                }
+            };
+
+            document.getElementById('next-page').onclick = () => {
+                const totalPages = Math.ceil(posts.filter(post => {
+                    const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+                    const searchTerm = searchInput.value.toLowerCase();
+                    const category = post.dataset.category;
+                    const title = post.querySelector('h3').textContent.toLowerCase();
+                    const excerpt = post.querySelector('p').textContent.toLowerCase();
+                    return (activeFilter === 'all' || category === activeFilter) && (title.includes(searchTerm) || excerpt.includes(searchTerm));
+                }).length / itemsPerPage);
+                
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updateGrid();
+                }
+            };
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
                     filterBtns.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
+                    currentPage = 1;
                     updateGrid();
                 });
             });
 
-            sortSelect.addEventListener('change', updateGrid);
-            searchInput.addEventListener('input', updateGrid);
+            sortSelect.addEventListener('change', () => {
+                currentPage = 1;
+                updateGrid();
+            });
+            
+            searchInput.addEventListener('input', () => {
+                currentPage = 1;
+                updateGrid();
+            });
 
             // Initial Update to apply default sorting (newest)
             updateGrid();
