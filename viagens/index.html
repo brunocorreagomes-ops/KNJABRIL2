@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Agência Completa de Viagens em Indaiatuba e Campinas | KNJ TUR</title>
+    <meta name="description" content="Agência de viagens personalizada em Indaiatuba e Campinas. Passagens aéreas, hotéis, cruzeiros e roteiros exclusivos. Atendimento local especializado.">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8842A',
+                        'primary-light': '#E5D5C0',
+                        ink: '#111111',
+                        'ink-darkest': '#0A0A0A',
+                        surface: '#FFFFFF',
+                        'surface-alt': '#FFFFFF',
+                        whatsapp: '#25D366',
+                        gold: '#C9A84C',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "KNJ TUR",
+      "image": "https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png",
+      "description": "Sua agência completa de viagens especializada em roteiros personalizados, cruzeiros e passagens aéreas.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Indaiatuba",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5511994085822"
+    }
+    </script>
+</head>
+<body class="bg-ink text-primary-light antialiased selection:bg-primary/30">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-24 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-1 group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer">
+            </a>
+            
+            <div class="flex items-center gap-10">
+                <nav class="hidden lg:flex items-center gap-10 text-[13px] font-bold uppercase tracking-[0.25em] text-primary-light/60">
+                    <a href="../index.html" class="nav-link-premium hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="nav-link-premium hover:text-primary transition-colors">Sobre</a>
+                    <div class="relative group">
+                        <button class="nav-link-premium flex items-center gap-1 hover:text-primary transition-colors uppercase cursor-default">
+                            Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i>
+                        </button>
+                        <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                            <div class="bg-ink border border-white/10 p-6 rounded-2xl w-64 shadow-2xl backdrop-blur-xl">
+                                <div class="flex flex-col gap-4">
+                                    <a href="../visto-americano/" class="text-[11px] hover:text-primary transition-colors">Visto Americano</a>
+                                    <a href="../viagens/" class="text-[11px] hover:text-primary transition-colors">Planejamento Completo</a>
+                                    <a href="../servicos/passagens-aereas/" class="text-[11px] hover:text-primary transition-colors">Passagens Aéreas</a>
+                                    <a href="../servicos/hospedagem/" class="text-[11px] hover:text-primary transition-colors">Hospedagem</a>
+                                    <a href="../servicos/roteiros-personalizados/" class="text-[11px] hover:text-primary transition-colors">Roteiros Personalizados</a>
+                                    <a href="../servicos/cruzeiros/" class="text-[11px] hover:text-primary transition-colors">Cruzeiros</a>
+                                    <a href="../servicos/ingressos/" class="text-[11px] hover:text-primary transition-colors">Ingressos Parques</a>
+                                    <a href="../servicos/traslados/" class="text-[11px] hover:text-primary transition-colors">Traslados</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../visto-americano/" class="nav-link-premium text-primary hover:text-white transition-colors">Visto</a>
+                    <a href="./" class="nav-link-premium active text-primary transition-colors">Viagens</a>
+                    <a href="../blog/" class="nav-link-premium hover:text-primary transition-colors">Blog</a>
+                    <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
+                        Chip Internacional
+                        <span class="subtexto">compre aqui</span>
+                    </a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
+                        <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
+                    </a>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações." target="_blank" class="btn-luxury btn-whatsapp !px-8 !py-3">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" size="28"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-ink/95 backdrop-blur-xl flex flex-col items-center gap-6 text-2xl font-display uppercase tracking-widest opacity-0 invisible transition-all duration-500 overflow-y-auto pt-40 pb-12">
+        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
+        <a href="./" class="text-primary hover:text-white transition-colors">Planejamento</a>
+        <a href="../blog/" class="text-white hover:text-primary transition-colors">Blog</a>
+        <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
+            Chip Internacional
+        </a>
+        
+        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
+        
+        <div class="flex flex-col items-center gap-4 text-center px-6">
+            <a href="../visto-americano/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Visto Americano</a>
+            <a href="../viagens/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Planejamento Completo</a>
+            <a href="../servicos/passagens-aereas/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Passagens Aéreas</a>
+            <a href="../servicos/hospedagem/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Hospedagem</a>
+            <a href="../servicos/roteiros-personalizados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Roteiros</a>
+            <a href="../servicos/cruzeiros/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Cruzeiros</a>
+            <a href="../servicos/ingressos/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Ingressos</a>
+            <a href="../servicos/traslados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Traslados</a>
+        </div>
+
+        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
+        
+        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp !px-10 !py-4">Falar conosco</a>
+        
+        <div class="flex gap-6 mt-4">
+            <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
+                <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer">
+            </a>
+        </div>
+    </div>
+
+    <main class="pt-52 pb-20">
+        <section class="py-24">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="max-w-4xl mx-auto text-center mb-24 reveal reveal-up">
+                    <div class="inline-flex items-center gap-3 mb-8">
+                        <div class="h-[1px] w-12 bg-primary"></div>
+                        <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Curadoria & Destinos</span>
+                    </div>
+                    <h1 class="text-5xl md:text-8xl font-display font-black leading-[1.1] text-white mb-8 tracking-tighter">
+                        Viagens que desenhamos <br><span class="text-primary italic">exclusivamente para você</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light">
+                        Seja uma jornada de negócios ou as férias da sua vida, nossa agência foca no que realmente importa: a sua experiência memorável.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-32">
+                    <!-- Servico 1: Passagens -->
+                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="plane" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Passagens Aéreas</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Busca estratégica das melhores rotas e tarifas exclusivas com suporte em todas as etapas da sua jornada.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="../servicos/passagens-aereas/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Passagens%20Aéreas." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
+                                Solicitar cotação <i data-lucide="chevron-right" size="12"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 2: Hospedagem -->
+                    <div class="reveal reveal-up reveal-delay-1 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="hotel" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Hospedagem</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Curadoria de hotéis selecionados e estadias exclusivas que combinam com seu perfil de viajante.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="../servicos/hospedagem/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Hospedagem." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
+                                Consultar estadias <i data-lucide="chevron-right" size="12"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 3: Cruzeiros -->
+                    <div class="reveal reveal-up reveal-delay-2 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="ship" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Cruzeiros Marítimos</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Reservas para as melhores companhias globais: MSC, Royal Caribbean e expedições de luxo.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="../servicos/cruzeiros/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Cruzeiros." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
+                                Ver navios <i data-lucide="chevron-right" size="12"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 4: Ingressos -->
+                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="ticket" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Ingressos & Atrações</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Disney, Universal e as principais atrações globais com tarifas diferenciadas e compra segura.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="../servicos/ingressos/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Ingressos%20de%20Parques." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
+                                Garantir entradas <i data-lucide="chevron-right" size="12"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 5: Trens -->
+                    <div class="reveal reveal-up reveal-delay-1 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="train" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Tickets de Trem</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Passes e tickets individuais para Europa e outras regiões com mobilidade estratégica.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20consultar%20trechos%20de%20trem." target="_blank" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Consultar trechos</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 6: Aluguel de Carro -->
+                    <div class="reveal reveal-up reveal-delay-2 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="car" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Aluguel de Carros</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Liberdade total em seu destino com as melhores locadoras e seguros completos inclusos.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20alugar%20un%20veículo%20para%20minha%20viagem." target="_blank" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Alugar veículo</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 7: Traslados -->
+                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="navigation" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Traslados</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Logística completa de chegada e saída para garantir o conforto da sua viagem internacional.</p>
+                        <div class="flex flex-col gap-3">
+                            <a href="../servicos/traslados/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                                    <i data-lucide="arrow-right" size="14"></i>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Traslados." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
+                                Solicitar traslado <i data-lucide="chevron-right" size="12"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 8: Chip Internacional -->
+                    <div class="reveal reveal-up p-10 bg-gradient-to-br from-primary/10 to-transparent rounded-[3rem] border border-primary/20 hover:border-primary/60 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="globe" size="80"></i>
+                        </div>
+                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+                            <i data-lucide="smartphone" class="text-white" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Chip Internacional (eSIM)</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Conectividade global instantânea. Garanta sua internet antes mesmo de pousar com os melhores planos de eSIM.</p>
+                        <a href="https://esims.com.br/pt?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="btn-luxury inline-flex items-center gap-3 !px-6 !py-3 w-full justify-center">
+                            Comprar eSIM Agora <i data-lucide="external-link" size="14"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <!-- CTA Final -->
+                <div class="relative py-24 md:py-32 rounded-[4rem] overflow-hidden text-center">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop" alt="Viagem dos Sonhos" class="w-full h-full object-cover opacity-20" referrerPolicy="no-referrer">
+                        <div class="absolute inset-0 bg-ink/80"></div>
+                    </div>
+                    <div class="relative z-10 max-w-2xl mx-auto px-6">
+                        <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-8 tracking-tighter italic font-bold">Transforme seu <span class="text-primary italic">roteiro em arte.</span></h2>
+                        <p class="text-primary-light/60 text-lg mb-12 font-light">Deixe os detalhes com quem entende de excelência. Seu próximo destino começa aqui.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20meu%20próximo%20roteiro." target="_blank" class="btn-luxury btn-whatsapp !px-12">Quero meu Roteiro Exclusivo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink pt-24 pb-12 text-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 border-b border-white/5 pb-24">
+                <div class="flex flex-col items-start">
+                    <a href="../index.html" class="flex items-center gap-3 mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto" referrerPolicy="no-referrer">
+                    </a>
+                    <p class="text-white/40 text-xs leading-loose max-w-[240px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Navegação</h5>
+                    <nav class="flex flex-col gap-4 text-xs font-semibold text-white/60">
+                        <a href="../index.html" class="hover:text-primary">Home</a>
+                        <a href="../sobre-nos/" class="hover:text-primary">Sobre</a>
+                        <a href="../visto-americano/" class="hover:text-primary">Visto</a>
+                        <a href="../blog/" class="hover:text-primary">Blog</a>
+                        <a href="./" class="hover:text-primary">Viagens</a>
+                    </nav>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Contato</h5>
+                    <div class="flex flex-col gap-4 text-xs font-semibold text-white/60">
+                        <span class="flex items-center gap-3"><i data-lucide="map-pin" size="14"></i> Indaiatuba, SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" size="14"></i> kenji@knjtur.com</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" size="14"></i> (11) 99408-5822</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Social</h5>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2">
+                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                        </a>
+                        <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-ink transition-all">
+                            <i data-lucide="message-circle" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-white/10">
+                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div id="floating-actions" class="floating-actions opacity-0 invisible translate-y-10 transition-all duration-500">
+        <!-- WhatsApp Float -->
+        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="float-btn float-whatsapp" title="Falar no WhatsApp">
+            <i data-lucide="message-circle" size="28"></i>
+        </a>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="float-btn float-top" title="Voltar ao topo">
+            <i data-lucide="chevron-up" size="28"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

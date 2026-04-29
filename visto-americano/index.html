@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessoria de Visto Americano em Indaiatuba e Campinas | KNJ TUR</title>
+    <meta name="description" content="Assessoria completa para vistos B1/B2, F1, J1 e renovações sem entrevista. Maximize suas chances com a KNJ TUR.">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8842A',
+                        'primary-light': '#E5D5C0',
+                        ink: '#111111',
+                        'ink-darkest': '#0A0A0A',
+                        surface: '#FFFFFF',
+                        'surface-alt': '#FFFFFF',
+                        whatsapp: '#25D366',
+                        gold: '#C9A84C',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ink text-primary-light antialiased selection:bg-primary/30">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-24 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-1 group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer">
+            </a>
+            
+            <div class="flex items-center gap-10">
+                <nav class="hidden lg:flex items-center gap-10 text-[13px] font-bold uppercase tracking-[0.25em] text-primary-light/60">
+                    <a href="../index.html" class="nav-link-premium hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="nav-link-premium hover:text-primary transition-colors">Sobre</a>
+                    <div class="relative group">
+                        <button class="nav-link-premium flex items-center gap-1 hover:text-primary transition-colors uppercase cursor-default">
+                            Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i>
+                        </button>
+                        <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                            <div class="bg-ink border border-white/10 p-6 rounded-2xl w-64 shadow-2xl backdrop-blur-xl">
+                                <div class="flex flex-col gap-4">
+                                    <a href="../visto-americano/" class="text-[11px] hover:text-primary transition-colors">Visto Americano</a>
+                                    <a href="../viagens/" class="text-[11px] hover:text-primary transition-colors">Planejamento Completo</a>
+                                    <a href="../servicos/passagens-aereas/" class="text-[11px] hover:text-primary transition-colors">Passagens Aéreas</a>
+                                    <a href="../servicos/hospedagem/" class="text-[11px] hover:text-primary transition-colors">Hospedagem</a>
+                                    <a href="../servicos/roteiros-personalizados/" class="text-[11px] hover:text-primary transition-colors">Roteiros Personalizados</a>
+                                    <a href="../servicos/cruzeiros/" class="text-[11px] hover:text-primary transition-colors">Cruzeiros</a>
+                                    <a href="../servicos/ingressos/" class="text-[11px] hover:text-primary transition-colors">Ingressos Parques</a>
+                                    <a href="../servicos/traslados/" class="text-[11px] hover:text-primary transition-colors">Traslados</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../visto-americano/" class="nav-link-premium active text-primary transition-colors">Visto</a>
+                    <a href="../viagens/" class="nav-link-premium hover:text-primary transition-colors">Viagens</a>
+                    <a href="../blog/" class="nav-link-premium hover:text-primary transition-colors">Blog</a>
+                    <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
+                        Chip Internacional
+                        <span class="subtexto">compre aqui</span>
+                    </a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
+                        <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
+                    </a>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações." target="_blank" class="btn-luxury btn-whatsapp !px-8 !py-3">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" size="28"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-ink/95 backdrop-blur-xl flex flex-col items-center gap-6 text-2xl font-display uppercase tracking-widest opacity-0 invisible transition-all duration-500 overflow-y-auto pt-40 pb-12">
+        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="../visto-americano/" class="text-primary hover:text-white transition-colors">Visto Americano</a>
+        <a href="../viagens/" class="text-white hover:text-primary transition-colors">Planejamento</a>
+        <a href="../blog/" class="text-white hover:text-primary transition-colors">Blog</a>
+        <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
+            Chip Internacional
+        </a>
+        
+        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
+        
+        <div class="flex flex-col items-center gap-4 text-center px-6">
+            <a href="../visto-americano/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Visto Americano</a>
+            <a href="../viagens/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Planejamento Completo</a>
+            <a href="../servicos/passagens-aereas/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Passagens Aéreas</a>
+            <a href="../servicos/hospedagem/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Hospedagem</a>
+            <a href="../servicos/roteiros-personalizados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Roteiros</a>
+            <a href="../servicos/cruzeiros/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Cruzeiros</a>
+            <a href="../servicos/ingressos/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Ingressos</a>
+            <a href="../servicos/traslados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Traslados</a>
+        </div>
+
+        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
+        
+        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp !px-10 !py-4">Falar conosco</a>
+        
+        <div class="flex gap-6 mt-4">
+            <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
+                <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer">
+            </a>
+        </div>
+    </div>
+
+    <main class="pt-52 pb-20">
+        <section class="py-24">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="max-w-4xl mx-auto text-center mb-24 reveal reveal-up">
+                    <div class="inline-flex items-center gap-3 mb-8">
+                        <div class="h-[1px] w-12 bg-primary"></div>
+                        <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Estratégia e Preparação</span>
+                    </div>
+                    <h1 class="text-5xl md:text-8xl font-display font-black leading-[1] text-white mb-8 tracking-tighter">
+                        Primeiro Visto e Renovação: <br><span class="text-primary italic block">Assessoria de Alto Padrão</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light">
+                        Análise de perfil, preenchimento DS-160 e agendamentos. Somos a agência de vistos referência próximo a Campinas.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
+                    <div class="reveal reveal-left">
+                        <h2 class="text-4xl md:text-5xl font-display font-black text-white mb-10 tracking-tight leading-tight uppercase">Por que <span class="text-primary italic">90% das negativas</span> podem ser evitadas?</h2>
+                        
+                        <div class="space-y-12">
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0 border border-primary/20">
+                                    <i data-lucide="alert-circle" class="text-primary" size="24"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-display text-2xl italic mb-3">Erros no formulário DS-160</h4>
+                                    <p class="text-primary-light/60 text-sm leading-relaxed">Pequenas inconsistências ou falta de detalhamento estratégico são os maiores gatilhos de recusa imediata.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0 border border-primary/20">
+                                    <i data-lucide="mic-2" class="text-primary" size="24"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-display text-2xl italic mb-3">Insegurança na Entrevista</h4>
+                                    <p class="text-primary-light/60 text-sm leading-relaxed">Não basta ter a documentação; é preciso saber comunicar seus vínculos de forma clara e objetiva.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0 border border-primary/20">
+                                    <i data-lucide="link" class="text-primary" size="24"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-display text-2xl italic mb-3">Vínculos Frágeis</h4>
+                                    <p class="text-primary-light/60 text-sm leading-relaxed">Assessoramos na demonstração correta de laços sociais, econômicos e profissionais com o Brasil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal reveal-right">
+                        <div class="glass-surface p-12 rounded-[4rem] border border-white/10 shadow-2xl relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2"></div>
+                            <h3 class="text-3xl font-display italic text-white mb-10 tracking-tight uppercase">O Padrão KNJ TUR</h3>
+                            <ul class="space-y-8">
+                                <li class="flex items-center gap-5 text-primary-light/90 font-medium group/item">
+                                    <div class="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform"></div>
+                                    Diagnóstico individual de perfil
+                                </li>
+                                <li class="flex items-center gap-5 text-primary-light/90 font-medium group/item">
+                                    <div class="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform"></div>
+                                    Preenchimento estratégico do DS-160
+                                </li>
+                                <li class="flex items-center gap-5 text-primary-light/90 font-medium group/item">
+                                    <div class="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform"></div>
+                                    Mentoria para a entrevista consular
+                                </li>
+                                <li class="flex items-center gap-5 text-primary-light/90 font-medium group/item">
+                                    <div class="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform"></div>
+                                    Assessoria rápida para renovações
+                                </li>
+                                <li class="flex items-center gap-5 text-primary-light/90 font-medium group/item">
+                                    <div class="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform"></div>
+                                    Suporte para vistos F1, J1 e B1/B2
+                                </li>
+                            </ul>
+                            <div class="mt-12">
+                                <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20um%20diagnóstico%20do%20meu%20perfil%20para%20o%20visto%20americano." target="_blank" class="btn-luxury btn-whatsapp w-full">Solicitar diagnóstico</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AVALIAÇÕES -->
+                <div class="py-24 border-y border-white/5 bg-white/5 -mx-6 md:-mx-12 px-6 md:px-12 mb-32">
+                    <div class="text-center mb-16 reveal reveal-up">
+                        <div class="flex items-center justify-center gap-3 mb-6 font-bold text-primary text-[10px] uppercase tracking-widest">
+                            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="h-4" referrerPolicy="no-referrer">
+                            Relatos de Sucesso
+                        </div>
+                        <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-6 tracking-tighter text-white">Confiança de quem já <span class="text-primary italic">aprovou</span></h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                        <!-- Kaio -->
+                        <div class="reveal reveal-up p-10 glass-surface rounded-[3rem] border border-white/5">
+                            <p class="text-primary-light/70 text-sm leading-relaxed italic mb-8 italic">"Kenji é um excelente profissional: entende exatamente o que você precisa e se dedica a encontrar as melhores opções, sempre com muito cuidado."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWPvSSn83wxX_2AUv6ns8HdvnDfrO4FhrwnTGyukxFGI-IndVJ0=s120-c" alt="Kaio Oliveira" class="w-10 h-10 rounded-full border border-primary/20" referrerPolicy="no-referrer">
+                                <div class="text-left">
+                                    <h5 class="text-white font-bold text-xs">Kaio Oliveira</h5>
+                                    <span class="text-primary/50 text-[8px] uppercase tracking-widest font-bold">Cliente</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Murilo -->
+                        <div class="reveal reveal-up reveal-delay-1 p-10 glass-surface rounded-[3rem] border border-white/5">
+                            <p class="text-primary-light/70 text-sm leading-relaxed italic mb-8 italic">"Excelente atendimento, rápido e prático. Kenji passou todas as informações que eu precisava sobre vistos e viagens. Recomendo muito!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWbD1CvnX3_YJDIjKQLV_3k4yx8RfsYn4yIk_avkBws573VqXVtw=s120-c" alt="Murilo A. de Camargo" class="w-10 h-10 rounded-full border border-primary/20" referrerPolicy="no-referrer">
+                                <div class="text-left">
+                                    <h5 class="text-white font-bold text-xs">Murilo A. de Camargo</h5>
+                                    <span class="text-primary/50 text-[8px] uppercase tracking-widest font-bold">Local Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Eduardo -->
+                        <div class="reveal reveal-up reveal-delay-2 p-10 glass-surface rounded-[3rem] border border-white/5">
+                            <p class="text-primary-light/70 text-sm leading-relaxed italic mb-8 italic">"Falei diretamente com o Kenji que me orientou em diversos detalhes para o agendamento e preparação. Agência excelente e educada. Recomendo!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXKeFR87PvS0ojTyvR2Ua-5AcUIb6FhfZkZ3hqWnpAuAElYX5Iytw=s120-c" alt="Eduardo Bergamo" class="w-10 h-10 rounded-full border border-primary/20" referrerPolicy="no-referrer">
+                                <div class="text-left">
+                                    <h5 class="text-white font-bold text-xs">Eduardo Bergamo</h5>
+                                    <span class="text-primary/50 text-[8px] uppercase tracking-widest font-bold">Local Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ SECTION -->
+                <div class="py-24 max-w-4xl mx-auto reveal reveal-up">
+                    <div class="text-center mb-16">
+                        <div class="inline-flex items-center gap-3 mb-8">
+                            <div class="h-[1px] w-12 bg-primary"></div>
+                            <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Dúvidas Frequentes</span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-display font-black text-white mb-6 tracking-tighter">Perguntas sobre o <span class="text-primary italic">Consulado Americano</span></h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Item 1 -->
+                        <div class="glass-surface rounded-3xl border border-white/5 overflow-hidden transition-all duration-300">
+                            <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-white font-display italic text-xl">Quais são os tipos de visto mais comuns?</span>
+                                <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                                    <i data-lucide="chevron-down" class="text-primary transition-transform duration-300" size="18"></i>
+                                </div>
+                            </button>
+                            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="px-8 pb-8 text-primary-light/60 text-sm leading-relaxed">
+                                    <p class="mb-4">Os vistos mais solicitados são:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-start gap-3"><span class="text-primary font-bold">• B1/B2:</span> Turismo e Negócios (o mais comum).</li>
+                                        <li class="flex items-start gap-3"><span class="text-primary font-bold">• F1:</span> Estudantes acadêmicos para escolas e universidades.</li>
+                                        <li class="flex items-start gap-3"><span class="text-primary font-bold">• J1:</span> Intercâmbio (Au Pair, Trainee, Summer Work).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="glass-surface rounded-3xl border border-white/5 overflow-hidden transition-all duration-300">
+                            <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-white font-serif italic text-xl">Qual o valor das taxas consulares?</span>
+                                <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                                    <i data-lucide="chevron-down" class="text-primary transition-transform duration-300" size="18"></i>
+                                </div>
+                            </button>
+                            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="px-8 pb-8 text-primary-light/60 text-sm leading-relaxed">
+                                    A taxa MRV para vistos de turismo (B1/B2) é atualmente de US$ 185. Vistos de estudante (F/J) também possuem este valor básico, podendo haver a taxa SEVIS adicional dependendo do programa. Os pagamentos são feitos via boleto ou cartão de crédito internacional.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="glass-surface rounded-3xl border border-white/5 overflow-hidden transition-all duration-300">
+                            <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-white font-serif italic text-xl">Como funciona o agendamento?</span>
+                                <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                                    <i data-lucide="chevron-down" class="text-primary transition-transform duration-300" size="18"></i>
+                                </div>
+                            </button>
+                            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="px-8 pb-8 text-primary-light/60 text-sm leading-relaxed">
+                                    O processo de agendamento é dividido em duas etapas: primeiro o CASV (Centro de Atendimento ao Solicitante de Visto) para coleta de biometria e foto, e depois o Consulado para a entrevista. Nós da KNJ TUR cuidamos de todo o calendário para você, buscando as datas mais próximas disponíveis.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="glass-surface rounded-3xl border border-white/5 overflow-hidden transition-all duration-300">
+                            <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-white font-serif italic text-xl">Como devo me preparar para a entrevista?</span>
+                                <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                                    <i data-lucide="chevron-down" class="text-primary transition-transform duration-300" size="18"></i>
+                                </div>
+                            </button>
+                            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="px-8 pb-8 text-primary-light/60 text-sm leading-relaxed">
+                                    A entrevista é o momento decisivo. O cônsul quer verificar seus vínculos com o Brasil. Realizamos uma mentoria individual simulando questões reais, revisando sua documentação e orientando sobre como responder com clareza, honestidade e segurança.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG LINKS SECTION -->
+                <div class="py-24 bg-surface-variant/30 rounded-[3rem] reveal reveal-up px-8 mb-24">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="text-center mb-16">
+                            <div class="inline-flex items-center gap-3 mb-8">
+                                <div class="h-[1px] w-12 bg-primary"></div>
+                                <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Conteúdo Recomendado</span>
+                            </div>
+                            <h2 class="text-4xl font-display font-black text-white mb-6 tracking-tighter text-white">Aprofunde seus <span class="text-primary italic text-primary">conhecimentos</span></h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Card 1 -->
+                            <a href="../blog/visto-americano-por-onde-comecar/" class="group block relative overflow-hidden rounded-3xl glass-surface border border-white/5 p-8 hover:border-primary/30 transition-all duration-500">
+                                <div class="flex flex-col h-full">
+                                    <span class="text-primary text-[10px] uppercase tracking-widest font-bold mb-4">Guia Completo</span>
+                                    <h3 class="text-xl text-white font-serif italic mb-4 leading-snug group-hover:text-primary transition-colors">Como tirar o Visto Americano em 2026: Guia por onde começar</h3>
+                                    <p class="text-primary-light/40 text-sm mb-8 flex-grow">Descubra cada etapa do processo consular atualizado para evitar erros comuns e negativas.</p>
+                                    <div class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
+                                        Ler Artigo <i data-lucide="arrow-right" size="14" class="group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Card 2 -->
+                            <a href="../blog/entrevista-consulado-americano-guia-pratico/" class="group block relative overflow-hidden rounded-3xl glass-surface border border-white/5 p-8 hover:border-primary/30 transition-all duration-500">
+                                <div class="flex flex-col h-full">
+                                    <span class="text-primary text-[10px] uppercase tracking-widest font-bold mb-4">Dicas de Especialista</span>
+                                    <h3 class="text-xl text-white font-serif italic mb-4 leading-snug group-hover:text-primary transition-colors">Entrevista no Consulado Americano: Guia Prático de Postura e Respostas</h3>
+                                    <p class="text-primary-light/40 text-sm mb-8 flex-grow">Aprenda a se portar e como responder às perguntas mais frequentes dos consultores.</p>
+                                    <div class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
+                                        Ler Artigo <i data-lucide="arrow-right" size="14" class="group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="relative py-24 md:py-32 rounded-[4rem] overflow-hidden text-center">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=2070&auto=format&fit=crop" alt="Visto Americano" class="w-full h-full object-cover opacity-20" referrerPolicy="no-referrer">
+                        <div class="absolute inset-0 bg-ink/80"></div>
+                    </div>
+                    <div class="relative z-10 max-w-2xl mx-auto px-6">
+                        <h2 class="text-4xl md:text-6xl font-serif italic text-white mb-8 tracking-tighter italic font-bold">Não deixe seu sonho nas mãos da sorte.</h2>
+                        <p class="text-primary-light/60 text-lg mb-12 font-light">Fale com um especialista agora e inicie seu processo consular com base estratégica.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Quero%20iniciar%20meu%20processo%20de%20visto%20americano%20com%20a%20KNJ%20TUR." target="_blank" class="btn-luxury btn-whatsapp !px-12">Garantir minha Consultoria VIP</a>
+                    </div>
+                </div>
+
+                <!-- AFILIADO: eSIM Internacional -->
+                <div class="mt-24 reveal reveal-up">
+                    <div class="max-w-4xl mx-auto bg-white/5 border border-white/10 p-10 md:p-16 rounded-[4rem] flex flex-col md:flex-row items-center gap-12 text-center md:text-left relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                        <div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center shrink-0 border border-primary/20 relative z-10">
+                            <i data-lucide="wifi" class="text-primary" size="48"></i>
+                        </div>
+                        <div class="flex-grow relative z-10">
+                            <h3 class="text-3xl md:text-4xl font-serif italic text-white mb-4 italic font-bold">Visto aprovado? Agora garanta sua internet no exterior</h3>
+                            <p class="text-primary-light/60 text-base md:text-lg leading-relaxed mb-10 font-light max-w-xl">
+                                Viaje conectado em qualquer país com um eSIM internacional. Ativa pelo celular em minutos, sem precisar trocar chip físico.
+                            </p>
+                            <div class="flex flex-col gap-5 items-center md:items-start">
+                                <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-luxury-primary !px-12 !py-5">
+                                    Ver planos de eSIM →
+                                </a>
+                                <span class="text-[10px] text-white/30 uppercase tracking-[0.2em] font-bold">*Link de parceiro — você sai do site da KNJ ao clicar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink pt-24 pb-12 text-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 border-b border-white/5 pb-24">
+                <div class="flex flex-col items-start">
+                    <a href="../index.html" class="flex items-center gap-3 mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto" referrerPolicy="no-referrer">
+                    </a>
+                    <p class="text-white/40 text-xs leading-loose max-w-[240px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Navegação</h5>
+                    <nav class="flex flex-col gap-4 text-xs font-semibold text-white/60">
+                        <a href="../index.html" class="hover:text-primary">Home</a>
+                        <a href="../sobre-nos/" class="hover:text-primary">Sobre</a>
+                        <a href="./" class="hover:text-primary">Visto</a>
+                        <a href="../viagens/" class="hover:text-primary">Viagens</a>
+                        <a href="../blog/" class="hover:text-primary">Blog</a>
+                    </nav>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Contato</h5>
+                    <div class="flex flex-col gap-4 text-xs font-semibold text-white/60">
+                        <span class="flex items-center gap-3"><i data-lucide="map-pin" size="14"></i> Indaiatuba, SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" size="14"></i> kenji@knjtur.com</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" size="14"></i> (11) 99408-5822</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Social</h5>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2">
+                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                        </a>
+                        <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida%20sobre%20vistos." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-ink transition-all">
+                            <i data-lucide="message-circle" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-white/10">
+                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div id="floating-actions" class="floating-actions opacity-0 invisible translate-y-10 transition-all duration-500">
+        <!-- WhatsApp Float -->
+        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="float-btn float-whatsapp" title="Falar no WhatsApp">
+            <i data-lucide="message-circle" size="28"></i>
+        </a>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="float-btn float-top" title="Voltar ao topo">
+            <i data-lucide="chevron-up" size="28"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
