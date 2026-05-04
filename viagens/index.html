@@ -311,21 +311,60 @@
                     </div>
                 </div>
 
-                <div style="margin: 2rem 0;">
-                  <p style="font-size: 13px; font-weight: 500; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1rem;">Atividades no destino</p>
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
-                    <div style="background: #E6F1FB; border: 0.5px solid #85B7EB; border-radius: 12px; padding: 1.25rem;">
-                      <p style="font-weight: 600; font-size: 15px; margin: 0 0 6px; color: #185FA5;">GetYourGuide</p>
-                      <p style="font-size: 14px; color: #555; margin: 0 0 12px;">Tours, passeios e transfers com cancelamento flexível em qualquer destino do mundo.</p>
-                      <a href="https://www.getyourguide.pt?partner_id=OQH7TN6&cmp=share_to_earn" target="_blank" rel="noopener" style="font-size: 14px; color: #185FA5; font-weight: 500;">Explorar no GetYourGuide →</a>
+                <!-- ATIVIDADES NO DESTINO -->
+                <div class="mt-32 pt-24 border-t border-white/5 reveal reveal-up">
+                    <div class="inline-flex items-center gap-3 mb-8">
+                        <span class="w-12 h-[1px] bg-primary/30"></span>
+                        <p class="text-[11px] font-bold uppercase tracking-[0.4em] text-primary">Ecossistema de Experiências</p>
                     </div>
-                    <div style="background: #FAEEDA; border: 0.5px solid #FAC775; border-radius: 12px; padding: 1.25rem;">
-                      <p style="font-weight: 600; font-size: 15px; margin: 0 0 6px; color: #854F0B;">Civitatis</p>
-                      <p style="font-size: 14px; color: #555; margin: 0 0 12px;">Passeios guiados em português com atendimento para viajantes brasileiros.</p>
-                      <a href="https://www.civitatis.com/br/?ag_aid=57611" target="_blank" rel="noopener" style="font-size: 14px; color: #854F0B; font-weight: 500;">Explorar na Civitatis →</a>
+                    <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-12 tracking-tighter italic">Exploração <span class="text-primary font-light">Global</span></h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+                        <!-- GetYourGuide Optimized -->
+                        <div class="group relative">
+                            <div class="absolute -inset-1 bg-gradient-to-br from-primary to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-700 rounded-[2.5rem] blur-xl"></div>
+                            <div class="bg-ink/40 backdrop-blur-3xl border border-white/10 p-8 lg:p-10 rounded-[2.5rem] transition-all duration-700 relative z-10 h-full flex flex-col hover:border-primary/30">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-ink transition-all duration-500 shadow-lg border border-white/5">
+                                        <i data-lucide="compass" class="w-6 h-6"></i>
+                                    </div>
+                                    <p class="font-display font-extrabold text-2xl text-white tracking-tighter">GetYourGuide</p>
+                                </div>
+                                <p class="text-primary-light/60 text-sm leading-relaxed mb-10 font-light group-hover:text-primary-light/90 transition-opacity">
+                                    Acesse tours, ingressos fura-fila e transfers com cancelamento flexível em todo o mundo.
+                                </p>
+                                <div class="mt-auto">
+                                    <a href="https://www.getyourguide.pt?partner_id=OQH7TN6&cmp=share_to_earn" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-3 py-4 rounded-xl border border-primary/20 text-primary text-[11px] font-bold uppercase tracking-widest hover:bg-primary hover:text-ink transition-all duration-300">
+                                        Explorar GetYourGuide <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Civitatis Optimized -->
+                        <div class="group relative">
+                            <div class="absolute -inset-1 bg-gradient-to-br from-primary to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-700 rounded-[2.5rem] blur-xl"></div>
+                            <div class="bg-ink/40 backdrop-blur-3xl border border-white/10 p-8 lg:p-10 rounded-[2.5rem] transition-all duration-700 relative z-10 h-full flex flex-col hover:border-primary/30">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-ink transition-all duration-500 shadow-lg border border-white/5">
+                                        <i data-lucide="map-pinned" class="w-6 h-6"></i>
+                                    </div>
+                                    <p class="font-display font-extrabold text-2xl text-white tracking-tighter">Civitatis</p>
+                                </div>
+                                <p class="text-primary-light/60 text-sm leading-relaxed mb-10 font-light group-hover:text-primary-light/90 transition-opacity">
+                                    Passeios guiados em português com foco no público brasileiro, garantindo imersão cultural sem barreiras linguísticas.
+                                </p>
+                                <div class="mt-auto">
+                                    <a href="https://www.civitatis.com/br/?ag_aid=57611" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-3 py-4 rounded-xl border border-primary/20 text-primary text-[11px] font-bold uppercase tracking-widest hover:bg-primary hover:text-ink transition-all duration-300">
+                                        Explorar na Civitatis <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <p style="font-size: 11px; color: #aaa; margin-top: 0.75rem;">*Links de parceiros — ao reservar por aqui você apoia a KNJ TUR sem custo extra.</p>
+                    <p class="text-[10px] text-primary/40 uppercase tracking-[0.2em] font-bold italic mt-10">
+                        *Links de parceiros oficiais — Planejamento estratégico com segurança assegurada pela KNJ TUR.
+                    </p>
                 </div>
             </div>
 
