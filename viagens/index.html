@@ -57,85 +57,61 @@
 </head>
 <body class="bg-ink text-primary-light antialiased selection:bg-primary/30">
     <div class="page-transition-mask"></div>
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
-        <div class="container flex justify-between items-center">
+    <!-- SECTION 1: HEADER -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
+        <div class="container flex justify-between items-center text-white">
             <a href="../index.html" class="flex items-center gap-1 group" aria-label="Voltar para Home">
-                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-9 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
             </a>
             
-            <div class="flex items-center gap-6 md:gap-10">
+            <div class="flex items-center gap-4 md:gap-10">
                 <nav class="hidden lg:flex items-center gap-10 text-[11px] font-black uppercase tracking-[0.3em] text-primary-light/60">
-                    <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
-                    <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
-                    <div class="relative group">
-                        <button class="flex items-center gap-1 hover:text-primary transition-colors uppercase cursor-default">
-                            Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i>
-                        </button>
-                        <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="bg-ink border border-white/10 p-6 rounded-2xl w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl">
-                                <div class="flex flex-col gap-4">
-                                    <a href="../visto-americano/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Visto Americano</a>
-                                    <a href="../viagens/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Planejamento Completo</a>
-                                    <a href="../servicos/passagens-aereas/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Passagens Aéreas</a>
-                                    <a href="../servicos/hospedagem/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Hospedagem</a>
-                                    <a href="../servicos/roteiros-personalizados/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Roteiros</a>
-                                    <a href="../servicos/cruzeiros/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Cruzeiros</a>
-                                    <a href="../servicos/ingressos/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Ingressos</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="../visto-americano/" class="text-primary hover:text-white transition-colors">Visto</a>
-                    <a href="./" class="text-white">Viagens</a>
-                    <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
+                    <a href="../index.html" class="nav-link hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="nav-link hover:text-primary transition-colors">Sobre</a>
+                    <a href="../visto-americano/" class="nav-link hover:text-primary transition-colors">Visto</a>
+                    <a href="./" class="nav-link hover:text-primary transition-colors active text-primary italic">Viagens</a>
+                    <a href="../blog/" class="nav-link hover:text-primary transition-colors">Blog</a>
                 </nav>
 
                 <div class="hidden md:flex items-center gap-6">
-                    <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-luxury-primary !px-6 !py-3 font-black text-[10px]">
-                        Falar com Kenji
+                    <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp !px-6 !py-2.5 !text-[10px] font-black uppercase tracking-widest !text-ink">
+                        WhatsApp
                     </a>
                 </div>
 
-                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                <button id="menu-btn" class="lg:hidden text-primary p-2 focus:outline-none" aria-label="Abrir Menu">
                     <i data-lucide="menu" class="w-7 h-7"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-ink/95 backdrop-blur-xl flex flex-col items-center gap-6 text-2xl font-display uppercase tracking-widest opacity-0 invisible transition-all duration-500 overflow-y-auto pt-40 pb-12">
-        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
-        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
-        <a href="../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
-        <a href="./" class="text-primary hover:text-white transition-colors">Planejamento</a>
-        <a href="../blog/" class="text-white hover:text-primary transition-colors">Blog</a>
-        <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
-            Chip Internacional
-        </a>
-        
-        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
-        
-        <div class="flex flex-col items-center gap-4 text-center px-6">
-            <a href="../visto-americano/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Visto Americano</a>
-            <a href="../viagens/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Planejamento Completo</a>
-            <a href="../servicos/passagens-aereas/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Passagens Aéreas</a>
-            <a href="../servicos/hospedagem/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Hospedagem</a>
-            <a href="../servicos/roteiros-personalizados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Roteiros</a>
-            <a href="../servicos/cruzeiros/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Cruzeiros</a>
-            <a href="../servicos/ingressos/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Ingressos</a>
-            <a href="../servicos/traslados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Traslados</a>
+    <!-- SECTION 2: MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 bg-ink z-[60] flex flex-col opacity-0 invisible transition-all duration-500 overflow-y-auto">
+        <div class="flex justify-between items-center px-6 h-20 border-b border-white/5">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-8 w-auto filter brightness-110">
+            <button id="close-menu" class="text-primary p-2 focus:outline-none" aria-label="Fechar Menu">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
         </div>
+        
+        <nav class="flex flex-col gap-1 p-6">
+            <a href="../index.html" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Home <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="../sobre-nos/" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Sobre <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="../visto-americano/" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Visto <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="./" class="text-2xl font-display font-black text-primary py-4 flex justify-between items-center group italic">Viagens <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="../blog/" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Blog <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+        </nav>
 
-        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
-        
-        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp !px-10 !py-4">Falar conosco</a>
-        
-        <div class="flex gap-6 mt-4">
-            <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
-                <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer">
-            </a>
+        <div class="mt-auto p-8 bg-white/[0.02] border-t border-white/5">
+            <p class="text-[10px] text-white/30 uppercase tracking-[0.4em] font-black mb-6 italic">Exclusividade KNJ</p>
+            <a href="https://wa.me/5511994085822" class="btn-luxury btn-whatsapp w-full !py-5 font-black text-[12px] uppercase tracking-widest text-ink block text-center">Inicie sua Jornada</a>
+            
+            <div class="flex gap-6 mt-8 justify-center">
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+            </div>
         </div>
     </div>
 

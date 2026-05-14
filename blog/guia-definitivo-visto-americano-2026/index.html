@@ -50,9 +50,9 @@
                 <nav class="hidden lg:flex items-center gap-10 text-[11px] font-black uppercase tracking-[0.3em] text-primary-light/60">
                     <a href="../../index.html" class="nav-link hover:text-primary transition-colors">Home</a>
                     <a href="../../sobre-nos/" class="nav-link hover:text-primary transition-colors">Sobre</a>
-                    <a href="../../visto-americano/" class="nav-link hover:text-primary transition-colors text-primary italic">Visto</a>
+                    <a href="../../visto-americano/" class="nav-link hover:text-primary transition-colors">Visto</a>
                     <a href="../../viagens/" class="nav-link hover:text-primary transition-colors">Viagens</a>
-                    <a href="../" class="nav-link hover:text-primary transition-colors active text-white">Blog</a>
+                    <a href="../../blog/" class="nav-link hover:text-primary transition-colors text-primary italic underline decoration-primary underline-offset-8">Blog</a>
                 </nav>
 
                 <div class="hidden md:flex items-center gap-6">
@@ -277,9 +277,9 @@
                     <nav class="flex flex-col gap-3 text-xs font-medium text-white/50">
                         <a href="../../index.html" class="hover:text-primary transition-colors">Home</a>
                         <a href="../../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
-                        <a href="../../visto-americano/" class="hover:text-primary transition-colors text-primary italic">Visto</a>
+                        <a href="../../visto-americano/" class="hover:text-primary transition-colors">Visto</a>
                         <a href="../../viagens/" class="hover:text-primary transition-colors">Viagens</a>
-                        <a href="../" class="hover:text-primary transition-colors active text-white">Blog</a>
+                        <a href="../../blog/" class="hover:text-primary transition-colors text-white">Blog</a>
                     </nav>
                 </div>
 
@@ -295,11 +295,11 @@
                 <div class="flex flex-col gap-4 md:gap-6">
                     <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Social</h5>
                     <div class="flex gap-4">
-                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2.5">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2.5">
                              <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer" loading="lazy">
                         </a>
-                        <a href="https://wa.me/5511994085822" target="_blank" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
-                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
                         </a>
                     </div>
                 </div>
@@ -313,6 +313,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Action Buttons -->
+    <div id="floating-actions" class="floating-actions opacity-0 invisible translate-y-10 transition-all duration-500">
+        <!-- WhatsApp Float -->
+        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="float-btn float-whatsapp" title="Falar no WhatsApp">
+            <i data-lucide="message-circle" size="28"></i>
+        </a>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="float-btn float-top" title="Voltar ao topo">
+            <i data-lucide="chevron-up" size="28"></i>
+        </button>
+    </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="../../script.js"></script>

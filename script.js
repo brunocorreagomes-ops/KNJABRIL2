@@ -52,35 +52,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
     const mobileMenu = document.getElementById('mobile-menu');
     
     if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            const isActive = mobileMenu.classList.toggle('active');
-            
-            // Toggle body scroll
-            document.body.style.overflow = isActive ? 'hidden' : '';
-            
-            // Update icon
-            menuBtn.innerHTML = isActive 
-                ? '<i data-lucide="x" size="28"></i>' 
-                : '<i data-lucide="menu" size="28"></i>';
-            
-            if (window.lucide) {
-                window.lucide.createIcons();
+        const toggleMenu = (show) => {
+            if (show) {
+                mobileMenu.classList.remove('invisible', 'opacity-0');
+                mobileMenu.classList.add('visible', 'opacity-100');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.add('invisible', 'opacity-0');
+                mobileMenu.classList.remove('visible', 'opacity-100');
+                document.body.style.overflow = '';
             }
-        });
+        };
+
+        menuBtn.addEventListener('click', () => toggleMenu(true));
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => toggleMenu(false));
+        }
 
         // Close menu when clicking a link
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
-                menuBtn.innerHTML = '<i data-lucide="menu" size="28"></i>';
-                if (window.lucide) {
-                    window.lucide.createIcons();
-                }
-            });
+            link.addEventListener('click', () => toggleMenu(false));
         });
     }
 
