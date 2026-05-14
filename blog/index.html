@@ -57,93 +57,61 @@
 </head>
 <body class="bg-ink text-primary-light antialiased selection:bg-primary/30">
     <div class="page-transition-mask"></div>
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-24 flex items-center transition-all duration-300">
-        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center text-white">
+    <!-- SECTION 1: HEADER -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
+        <div class="container flex justify-between items-center text-white">
             <a href="../index.html" class="flex items-center gap-1 group" aria-label="Voltar para Home">
-                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-9 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
             </a>
             
-            <div class="flex items-center gap-10">
-                <nav class="hidden lg:flex items-center gap-10 text-[13px] font-bold uppercase tracking-[0.25em] text-primary-light/60">
-                    <a href="../index.html" class="nav-link-premium hover:text-primary transition-colors">Home</a>
-                    <a href="../sobre-nos/" class="nav-link-premium hover:text-primary transition-colors">Sobre</a>
-                    <div class="relative group">
-                        <button class="nav-link-premium flex items-center gap-1 hover:text-primary transition-colors uppercase cursor-default">
-                            Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i>
-                        </button>
-                        <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="bg-ink border border-white/10 p-6 rounded-2xl w-64 shadow-2xl backdrop-blur-xl">
-                                <div class="flex flex-col gap-4">
-                                    <a href="../visto-americano/" class="text-[11px] hover:text-primary transition-colors">Visto Americano</a>
-                                    <a href="../viagens/" class="text-[11px] hover:text-primary transition-colors">Planejamento Completo</a>
-                                    <a href="../servicos/passagens-aereas/" class="text-[11px] hover:text-primary transition-colors">Passagens Aéreas</a>
-                                    <a href="../servicos/hospedagem/" class="text-[11px] hover:text-primary transition-colors">Hospedagem</a>
-                                    <a href="../servicos/roteiros-personalizados/" class="text-[11px] hover:text-primary transition-colors">Roteiros Personalizados</a>
-                                    <a href="../servicos/cruzeiros/" class="text-[11px] hover:text-primary transition-colors">Cruzeiros</a>
-                                    <a href="../servicos/ingressos/" class="text-[11px] hover:text-primary transition-colors">Ingressos Parques</a>
-                                    <a href="../servicos/traslados/" class="text-[11px] hover:text-primary transition-colors">Traslados</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="../visto-americano/" class="nav-link-premium text-primary hover:text-white transition-colors">Visto</a>
-                    <a href="../viagens/" class="nav-link-premium hover:text-primary transition-colors">Viagens</a>
-                    <a href="./" class="nav-link-premium active text-primary transition-colors">Blog</a>
-                    <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
-                         Chip Internacional
-                         <span class="subtexto">compre aqui</span>
-                    </a>
+            <div class="flex items-center gap-4 md:gap-10">
+                <nav class="hidden lg:flex items-center gap-10 text-[11px] font-black uppercase tracking-[0.3em] text-primary-light/60">
+                    <a href="../index.html" class="nav-link hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="nav-link hover:text-primary transition-colors">Sobre</a>
+                    <a href="../visto-americano/" class="nav-link hover:text-primary transition-colors text-primary italic">Visto</a>
+                    <a href="../viagens/" class="nav-link hover:text-primary transition-colors">Viagens</a>
+                    <a href="./" class="nav-link hover:text-primary transition-colors active text-white">Blog</a>
                 </nav>
 
                 <div class="hidden md:flex items-center gap-6">
-                    <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
-                        <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
-                    </a>
-                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações." target="_blank" class="btn-luxury btn-whatsapp !px-8 !py-3 !text-ink font-bold">
+                    <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp !px-6 !py-2.5 !text-[10px] font-black uppercase tracking-widest !text-ink">
                         WhatsApp
                     </a>
                 </div>
 
-                <button id="menu-btn" class="lg:hidden text-primary p-2">
-                    <i data-lucide="menu" size="28"></i>
+                <button id="menu-btn" class="lg:hidden text-primary p-2 focus:outline-none" aria-label="Abrir Menu">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu Container -->
-    <div id="mobile-menu" class="fixed inset-0 bg-ink/95 backdrop-blur-xl flex flex-col items-center gap-6 text-2xl font-display uppercase tracking-widest opacity-0 invisible transition-all duration-500 overflow-y-auto pt-40 pb-12">
-        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
-        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
-        <a href="../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
-        <a href="../viagens/" class="text-white hover:text-primary transition-colors">Planejamento</a>
-        <a href="./" class="text-primary hover:text-white transition-colors">Blog</a>
-        <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
-            Chip Internacional
-        </a>
-        
-        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
-        
-        <div class="flex flex-col items-center gap-4 text-center px-6">
-            <a href="../visto-americano/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Visto Americano</a>
-            <a href="../viagens/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Planejamento Completo</a>
-            <a href="../servicos/passagens-aereas/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Passagens Aéreas</a>
-            <a href="../servicos/hospedagem/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Hospedagem</a>
-            <a href="../servicos/roteiros-personalizados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Roteiros</a>
-            <a href="../servicos/cruzeiros/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Cruzeiros</a>
-            <a href="../servicos/ingressos/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Ingressos</a>
-            <a href="../servicos/traslados/" class="text-sm text-white/60 hover:text-primary transition-colors uppercase tracking-[0.2em] font-bold">Traslados</a>
+    <!-- SECTION 2: MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 bg-ink z-[60] flex flex-col opacity-0 invisible transition-all duration-500 overflow-y-auto">
+        <div class="flex justify-between items-center px-6 h-20 border-b border-white/5">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-8 w-auto filter brightness-110">
+            <button id="close-menu" class="text-primary p-2 focus:outline-none" aria-label="Fechar Menu">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
         </div>
+        
+        <nav class="flex flex-col gap-1 p-6">
+            <a href="../index.html" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Home <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="../sobre-nos/" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Sobre <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="../visto-americano/" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Visto <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="../viagens/" class="text-2xl font-display font-black text-white py-4 flex justify-between items-center group italic">Viagens <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+            <a href="./" class="text-2xl font-display font-black text-primary py-4 flex justify-between items-center group italic">Blog <i data-lucide="chevron-right" class="text-primary opacity-0 group-hover:opacity-100 transition-all"></i></a>
+        </nav>
 
-        <div class="h-[1px] w-12 bg-white/10 my-4"></div>
-        
-        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp !px-10 !py-4 font-bold !text-ink">Falar conosco</a>
-        
-        <div class="flex gap-6 mt-4">
-            <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
-                <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer">
-            </a>
+        <div class="mt-auto p-8 bg-white/[0.02] border-t border-white/5">
+            <p class="text-[10px] text-white/30 uppercase tracking-[0.4em] font-black mb-6 italic">Exclusividade KNJ</p>
+            <a href="https://wa.me/5511994085822" class="btn-luxury btn-whatsapp w-full !py-5 font-black text-[12px] uppercase tracking-widest text-ink block text-center">Inicie sua Jornada</a>
+            
+            <div class="flex gap-6 mt-8 justify-center">
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -164,33 +132,33 @@
                 </div>
 
                 <!-- Filter Bar Enhanced -->
-                <div class="bg-white/[0.03] border border-white/10 rounded-[2.5rem] p-6 md:p-8 mb-16 reveal reveal-up">
-                    <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
-                        <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                            <button class="filter-btn active" data-filter="all">Todos</button>
-                            <button class="filter-btn" data-filter="Visto Americano">Visto Americano</button>
-                            <button class="filter-btn" data-filter="Dicas de Viagem">Dicas de Viagem</button>
-                            <button class="filter-btn" data-filter="Notícias Globais">Notícias Globais</button>
+                <div class="bg-white/[0.02] border border-white/5 rounded-[2rem] md:rounded-[3rem] p-4 md:p-8 mb-12 md:mb-16">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8">
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-2 md:gap-4 scroll-hide">
+                            <button class="filter-btn active" data-filter="all text-[10px]">Todos</button>
+                            <button class="filter-btn text-[10px]" data-filter="Visto Americano">Vistos</button>
+                            <button class="filter-btn text-[10px]" data-filter="Dicas de Viagem">Dicas</button>
+                            <button class="filter-btn text-[10px]" data-filter="Notícias Globais">Notícias</button>
                         </div>
                         
-                        <div class="flex flex-col md:flex-row items-center gap-6 w-full lg:w-auto">
+                        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full lg:w-auto">
                             <div class="relative w-full md:w-64 group">
                                 <i data-lucide="search" class="absolute left-6 top-1/2 -translate-y-1/2 w-4 h-4 text-white/20 group-focus-within:text-primary transition-colors"></i>
-                                <input type="text" id="search-blog" placeholder="Pesquisar artigos..." class="search-input pl-14">
+                                <input type="text" id="search-blog" placeholder="Encontrar artigo..." class="search-input pl-14 h-12">
                             </div>
                             
-                            <div class="flex items-center gap-4 shrink-0">
-                                <span class="text-[10px] uppercase font-bold tracking-widest text-primary-light/40">Ordenar:</span>
-                                <select id="sort-date" class="bg-transparent border-b border-primary/30 text-[10px] uppercase font-bold tracking-widest text-primary focus:outline-none cursor-pointer py-1 pr-4">
-                                    <option value="newest">Mais Recentes</option>
-                                    <option value="oldest">Mais Antigos</option>
+                            <div class="flex items-center gap-4 shrink-0 self-center">
+                                <span class="text-[10px] uppercase font-black tracking-widest text-white/20 italic">Ordenar:</span>
+                                <select id="sort-date" class="bg-transparent border-b border-primary/30 text-[10px] uppercase font-black tracking-widest text-primary focus:outline-none cursor-pointer py-1 pr-4">
+                                    <option value="newest">Novos</option>
+                                    <option value="oldest">Antigos</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="blog-posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+                <div id="blog-posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mb-16 md:mb-24">
                     <!-- Post NEW 16: Albânia 2026 -->
                     <article class="blog-post reveal reveal-up group" data-category="Tendências" data-date="2026-05-14">
                         <div class="blog-card">
@@ -756,56 +724,56 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-ink pt-24 pb-12 text-white">
-        <div class="container mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 border-b border-white/5 pb-24">
-                <div class="flex flex-col items-start">
-                    <a href="../index.html" class="flex items-center gap-3 mb-8">
-                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto" referrerPolicy="no-referrer">
+    <!-- SECTION 6: FOOTER -->
+    <footer class="bg-ink pt-16 md:pt-24 pb-8 md:pb-12 text-white border-t border-white/5">
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24 border-b border-white/5 pb-16 md:pb-24">
+                <div class="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
+                    <a href="../index.html" class="flex items-center gap-3 mb-6 md:mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto" referrerPolicy="no-referrer">
                     </a>
-                    <p class="text-white/40 text-xs leading-loose max-w-[240px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                    <p class="text-white/40 text-[11px] leading-loose max-w-[280px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
                 </div>
 
-                <div class="flex flex-col gap-6">
-                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Navegação</h5>
-                    <nav class="flex flex-col gap-4 text-xs font-semibold text-white/60">
-                        <a href="../index.html" class="hover:text-primary">Home</a>
-                        <a href="../sobre-nos/" class="hover:text-primary">Sobre</a>
-                        <a href="../visto-americano/" class="hover:text-primary">Visto</a>
-                        <a href="../viagens/" class="hover:text-primary">Viagens</a>
-                        <a href="./" class="hover:text-primary">Blog</a>
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Navegação</h5>
+                    <nav class="flex flex-col gap-3 text-xs font-medium text-white/50">
+                        <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                        <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
+                        <a href="../visto-americano/" class="hover:text-primary transition-colors">Visto</a>
+                        <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                        <a href="./" class="hover:text-primary transition-colors active">Blog</a>
                     </nav>
                 </div>
 
-                <div class="flex flex-col gap-6">
-                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Contato</h5>
-                    <div class="flex flex-col gap-4 text-xs font-semibold text-white/60">
-                        <span class="flex items-center gap-3"><i data-lucide="map-pin" size="14"></i> Indaiatuba, SP</span>
-                        <span class="flex items-center gap-3"><i data-lucide="mail" size="14"></i> kenji@knjtur.com</span>
-                        <span class="flex items-center gap-3"><i data-lucide="phone" size="14"></i> (11) 99408-5822</span>
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Contato</h5>
+                    <div class="flex flex-col gap-3 text-xs font-medium text-white/50">
+                        <span class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0"></i> Indaiatuba - SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-primary shrink-0"></i> kenji@knjtur.com</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i> (11) 99408-5822</span>
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-6">
-                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Social</h5>
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Social</h5>
                     <div class="flex gap-4">
-                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2">
-                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2.5">
+                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer" loading="lazy">
                         </a>
-                        <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-ink transition-all">
-                            <i data-lucide="message-circle" size="16"></i>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-                    <p class="text-[10px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
-                    <div class="text-[8px] uppercase tracking-widest text-white/10">
-                        SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
-                    </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[9px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-white/10 font-bold">
+                    DESIGN BY <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0]/60 hover:text-[#40E0D0] transition-colors">ORVALIA</a>
                 </div>
+            </div>
         </div>
     </footer>
 

@@ -58,55 +58,47 @@
 <body class="bg-ink text-primary-light antialiased selection:bg-primary/30">
     <div class="page-transition-mask"></div>
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-24 flex items-center transition-all duration-300">
-        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
+        <div class="container flex justify-between items-center">
             <a href="../index.html" class="flex items-center gap-1 group" aria-label="Voltar para Home">
                 <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
             </a>
             
-            <div class="flex items-center gap-10">
-                <nav class="hidden lg:flex items-center gap-10 text-[13px] font-bold uppercase tracking-[0.25em] text-primary-light/60">
-                    <a href="../index.html" class="nav-link-premium hover:text-primary transition-colors">Home</a>
-                    <a href="../sobre-nos/" class="nav-link-premium hover:text-primary transition-colors">Sobre</a>
+            <div class="flex items-center gap-6 md:gap-10">
+                <nav class="hidden lg:flex items-center gap-10 text-[11px] font-black uppercase tracking-[0.3em] text-primary-light/60">
+                    <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
                     <div class="relative group">
-                        <button class="nav-link-premium flex items-center gap-1 hover:text-primary transition-colors uppercase cursor-default">
+                        <button class="flex items-center gap-1 hover:text-primary transition-colors uppercase cursor-default">
                             Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i>
                         </button>
                         <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="bg-ink border border-white/10 p-6 rounded-2xl w-64 shadow-2xl backdrop-blur-xl">
+                            <div class="bg-ink border border-white/10 p-6 rounded-2xl w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl">
                                 <div class="flex flex-col gap-4">
-                                    <a href="../visto-americano/" class="text-[11px] hover:text-primary transition-colors">Visto Americano</a>
-                                    <a href="../viagens/" class="text-[11px] hover:text-primary transition-colors">Planejamento Completo</a>
-                                    <a href="../servicos/passagens-aereas/" class="text-[11px] hover:text-primary transition-colors">Passagens Aéreas</a>
-                                    <a href="../servicos/hospedagem/" class="text-[11px] hover:text-primary transition-colors">Hospedagem</a>
-                                    <a href="../servicos/roteiros-personalizados/" class="text-[11px] hover:text-primary transition-colors">Roteiros Personalizados</a>
-                                    <a href="../servicos/cruzeiros/" class="text-[11px] hover:text-primary transition-colors">Cruzeiros</a>
-                                    <a href="../servicos/ingressos/" class="text-[11px] hover:text-primary transition-colors">Ingressos Parques</a>
-                                    <a href="../servicos/traslados/" class="text-[11px] hover:text-primary transition-colors">Traslados</a>
+                                    <a href="../visto-americano/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Visto Americano</a>
+                                    <a href="../viagens/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Planejamento Completo</a>
+                                    <a href="../servicos/passagens-aereas/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Passagens Aéreas</a>
+                                    <a href="../servicos/hospedagem/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Hospedagem</a>
+                                    <a href="../servicos/roteiros-personalizados/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Roteiros</a>
+                                    <a href="../servicos/cruzeiros/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Cruzeiros</a>
+                                    <a href="../servicos/ingressos/" class="text-[10px] uppercase tracking-widest font-bold hover:text-primary transition-colors">Ingressos</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="../visto-americano/" class="nav-link-premium text-primary hover:text-white transition-colors">Visto</a>
-                    <a href="./" class="nav-link-premium active text-primary transition-colors">Viagens</a>
-                    <a href="../blog/" class="nav-link-premium hover:text-primary transition-colors">Blog</a>
-                    <a href="https://esims.com.br/?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="nav-chip-link">
-                        Chip Internacional
-                        <span class="subtexto">compre aqui</span>
-                    </a>
+                    <a href="../visto-americano/" class="text-primary hover:text-white transition-colors">Visto</a>
+                    <a href="./" class="text-white">Viagens</a>
+                    <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
                 </nav>
 
                 <div class="hidden md:flex items-center gap-6">
-                    <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors">
-                        <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
-                    </a>
-                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações." target="_blank" class="btn-luxury btn-whatsapp !px-8 !py-3">
-                        WhatsApp
+                    <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-luxury-primary !px-6 !py-3 font-black text-[10px]">
+                        Falar com Kenji
                     </a>
                 </div>
 
                 <button id="menu-btn" class="lg:hidden text-primary p-2">
-                    <i data-lucide="menu" size="28"></i>
+                    <i data-lucide="menu" class="w-7 h-7"></i>
                 </button>
             </div>
         </div>
@@ -147,304 +139,244 @@
         </div>
     </div>
 
-    <main class="pt-52 pb-20">
-        <section class="py-24">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-4xl mx-auto text-center mb-24 reveal reveal-up">
-                    <div class="inline-flex items-center gap-3 mb-8">
-                        <div class="h-[1px] w-12 bg-primary"></div>
-                        <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Curadoria & Destinos</span>
+    <main class="pt-32 md:pt-48 pb-10 md:pb-20">
+        <section class="py-12 md:py-24">
+            <div class="container">
+                <div class="max-w-4xl mx-auto text-center mb-16 md:mb-24 reveal reveal-up">
+                    <div class="inline-flex items-center gap-3 mb-6 md:mb-8 text-primary overflow-hidden">
+                        <div class="h-[1px] w-8 md:w-12 bg-current"></div>
+                        <span class="text-[10px] uppercase tracking-[0.4em] font-black">Curadoria & Destinos</span>
                     </div>
-                    <h1 class="text-5xl md:text-8xl font-display font-black leading-[1.2] text-white mb-8 tracking-tighter">
-                        Pacotes de Viagem em Indaiatuba <br><span class="text-primary italic">exclusivamente para você</span>
+                    <h1 class="text-5xl md:text-8xl font-display font-black leading-[1.2] text-white mb-6 md:mb-8 tracking-tighter">
+                        Viagens sob medida em <br><span class="text-primary italic">Indaiatuba</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light">
-                        Seja uma jornada de negócios ou as férias da sua vida, nossa agência foca no que realmente importa: a sua experiência memorável.
+                    <p class="text-base md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light">
+                        De jornadas corporativas a férias inesquecíveis, transformamos seu plano em uma experiência memorável.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-32">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mb-20 md:mb-32">
                     <!-- Servico 1: Passagens -->
-                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="plane" class="text-primary" size="28"></i>
+                    <div class="reveal reveal-up p-8 md:p-10 bg-white/[0.02] rounded-[2.5rem] md:rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-primary/20">
+                            <i data-lucide="plane" class="text-primary w-6 h-6 md:w-7 md:h-7"></i>
                         </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Passagens Aéreas</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Busca estratégica das melhores rotas e conexões inteligentes com suporte em todas as etapas da sua jornada.</p>
+                        <h3 class="text-xl md:text-2xl font-display italic font-black text-white mb-4">Passagens Aéreas</h3>
+                        <p class="text-primary-light/60 text-xs md:text-sm leading-relaxed mb-6 md:mb-8">Busca estratégica das melhores rotas e conexões inteligentes com suporte 24h para sua tranquilidade.</p>
                         <div class="flex flex-col gap-3">
-                            <a href="../servicos/passagens-aereas/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                            <a href="../servicos/passagens-aereas/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/[0.05] border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-[10px] font-black uppercase tracking-widest">Detalhes</span>
                                 <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                 </div>
-                            </a>
-                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Passagens%20Aéreas." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
-                                Solicitar cotação <i data-lucide="chevron-right" size="12"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- Servico 2: Hospedagem -->
-                    <div class="reveal reveal-up reveal-delay-1 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="hotel" class="text-primary" size="28"></i>
+                    <div class="reveal reveal-up reveal-delay-1 p-8 md:p-10 bg-white/[0.02] rounded-[2.5rem] md:rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-primary/20">
+                            <i data-lucide="hotel" class="text-primary w-6 h-6 md:w-7 md:h-7"></i>
                         </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Hospedagem</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Curadoria de hotéis selecionados e estadias exclusivas que combinam com seu perfil de viajante.</p>
+                        <h3 class="text-xl md:text-2xl font-display italic font-black text-white mb-4">Hospedagem</h3>
+                        <p class="text-primary-light/60 text-xs md:text-sm leading-relaxed mb-6 md:mb-8">Curadoria de hotéis selecionados e estadias exclusivas que combinam com seu estilo.</p>
                         <div class="flex flex-col gap-3">
-                            <a href="../servicos/hospedagem/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                            <a href="../servicos/hospedagem/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/[0.05] border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-[10px] font-black uppercase tracking-widest">Detalhes</span>
                                 <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                 </div>
-                            </a>
-                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Hospedagem." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
-                                Consultar estadias <i data-lucide="chevron-right" size="12"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- Servico 3: Cruzeiros -->
-                    <div class="reveal reveal-up reveal-delay-2 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="ship" class="text-primary" size="28"></i>
+                    <div class="reveal reveal-up reveal-delay-2 p-8 md:p-10 bg-white/[0.02] rounded-[2.5rem] md:rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-primary/20">
+                            <i data-lucide="ship" class="text-primary w-6 h-6 md:w-7 md:h-7"></i>
                         </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Cruzeiros Marítimos e Fluviais</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Reservas para as melhores companhias globais, expedições de luxo e roteiros fluviais exclusivos.</p>
+                        <h3 class="text-xl md:text-2xl font-display italic font-black text-white mb-4">Cruzeiros</h3>
+                        <p class="text-primary-light/60 text-xs md:text-sm leading-relaxed mb-6 md:mb-8">Reservas para as melhores companhias globais e roteiros fluviais exclusivos.</p>
                         <div class="flex flex-col gap-3">
-                            <a href="../servicos/cruzeiros/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                            <a href="../servicos/cruzeiros/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/[0.05] border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-[10px] font-black uppercase tracking-widest">Detalhes</span>
                                 <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                 </div>
-                            </a>
-                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Cruzeiros." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
-                                Ver navios <i data-lucide="chevron-right" size="12"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- Servico 4: Ingressos -->
-                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="ticket" class="text-primary" size="28"></i>
+                    <div class="reveal reveal-up p-8 md:p-10 bg-white/[0.02] rounded-[2.5rem] md:rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-primary/20">
+                            <i data-lucide="ticket" class="text-primary w-6 h-6 md:w-7 md:h-7"></i>
                         </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Ingressos & Atrações</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Disney, Universal e as principais atrações globais com suporte total e compra segura.</p>
+                        <h3 class="text-xl md:text-2xl font-display italic font-black text-white mb-4">Ingressos & Atrações</h3>
+                        <p class="text-primary-light/60 text-xs md:text-sm leading-relaxed mb-6 md:mb-8">Disney, Universal e as principais atrações globais com compra segura e suporte local.</p>
                         <div class="flex flex-col gap-3">
-                            <a href="../servicos/ingressos/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
+                            <a href="../servicos/ingressos/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/[0.05] border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-[10px] font-black uppercase tracking-widest">Detalhes</span>
                                 <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
-                                </div>
-                            </a>
-                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Ingressos%20de%20Parques." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
-                                Garantir entradas <i data-lucide="chevron-right" size="12"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Servico 5: Trens -->
-                    <div class="reveal reveal-up reveal-delay-1 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="train" class="text-primary" size="28"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Tickets de Trem</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Passes e tickets individuais para Europa e outras regiões com mobilidade estratégica.</p>
-                        <div class="flex flex-col gap-3">
-                            <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20consultar%20trechos%20de%20trem." target="_blank" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Consultar trechos</span>
-                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Servico 6: Aluguel de Carro -->
-                    <div class="reveal reveal-up reveal-delay-2 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="car" class="text-primary" size="28"></i>
+                    <!-- Servico 5: Mobilidade -->
+                    <div class="reveal reveal-up reveal-delay-1 p-8 md:p-10 bg-white/[0.02] rounded-[2.5rem] md:rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-primary/20">
+                            <i data-lucide="car" class="text-primary w-6 h-6 md:w-7 md:h-7"></i>
                         </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Aluguel de Carros</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Liberdade total em seu destino com as melhores locadoras e seguros completos inclusos.</p>
+                        <h3 class="text-xl md:text-2xl font-display italic font-black text-white mb-4">Carros & Trens</h3>
+                        <p class="text-primary-light/60 text-xs md:text-sm leading-relaxed mb-6 md:mb-8">Liberdade total com aluguel de veículos e tickets de trem para Europa e outras regiões.</p>
                         <div class="flex flex-col gap-3">
-                            <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20alugar%20un%20veículo%20para%20minha%20viagem." target="_blank" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Alugar veículo</span>
+                            <a href="https://wa.me/5511994085822" target="_blank" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/[0.05] border border-white/5 hover:border-primary/40 transition-all">
+                                <span class="text-white text-[10px] font-black uppercase tracking-widest">Consultar</span>
                                 <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Servico 7: Traslados -->
-                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
-                            <i data-lucide="navigation" class="text-primary" size="28"></i>
+                    <!-- Servico 6: Conectividade -->
+                    <div class="reveal reveal-up reveal-delay-2 p-8 md:p-10 bg-primary/5 rounded-[2.5rem] md:rounded-[3rem] border border-primary/20 hover:border-primary/40 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <i data-lucide="globe" class="w-20 h-20"></i>
                         </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Traslados</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Logística completa de chegada e saída para garantir o conforto da sua viagem internacional.</p>
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-primary rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg shadow-primary/20">
+                            <i data-lucide="wifi" class="text-white w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-display italic font-black text-white mb-4">eSIM Internacional</h3>
+                        <p class="text-primary-light/60 text-xs md:text-sm leading-relaxed mb-6 md:mb-8">Conectividade global instantânea. Garanta sua internet antes mesmo de pousar.</p>
                         <div class="flex flex-col gap-3">
-                            <a href="../servicos/traslados/" class="group/link flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/40 transition-all">
-                                <span class="text-white text-xs font-bold uppercase tracking-wider">Ver detalhes</span>
-                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                                    <i data-lucide="arrow-right" size="14"></i>
+                            <a href="https://esims.com.br/pt?ref=GOWFHCP" target="_blank" class="group/link flex items-center justify-between p-4 rounded-2xl bg-primary/20 border border-primary/20 hover:bg-primary hover:border-primary transition-all">
+                                <span class="text-white text-[10px] font-black uppercase tracking-widest">Comprar agora</span>
+                                <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center group-hover/link:bg-white group-hover/link:text-primary transition-all">
+                                    <i data-lucide="external-link" class="w-4 h-4"></i>
                                 </div>
                             </a>
-                            <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20Traslados." target="_blank" class="flex items-center gap-2 text-primary text-[10px] font-black uppercase tracking-[0.2em] px-4 hover:translate-x-2 transition-transform">
-                                Solicitar traslado <i data-lucide="chevron-right" size="12"></i>
-                            </a>
                         </div>
                     </div>
-
-                    <!-- Servico 8: Chip Internacional -->
-                    <div class="reveal reveal-up p-10 bg-gradient-to-br from-primary/10 to-transparent rounded-[3rem] border border-primary/20 hover:border-primary/60 transition-all group relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i data-lucide="globe" size="80"></i>
-                        </div>
-                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
-                            <i data-lucide="smartphone" class="text-white" size="28"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif italic text-white mb-4">Chip Internacional (eSIM)</h3>
-                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Conectividade global instantânea. Garanta sua internet antes mesmo de pousar com os melhores planos de eSIM.</p>
-                        <a href="https://esims.com.br/pt?ref=GOWFHCP" target="_blank" rel="noopener noreferrer nofollow" class="btn-luxury inline-flex items-center gap-3 !px-6 !py-3 w-full justify-center">
-                            Comprar eSIM Agora <i data-lucide="external-link" size="14"></i>
-                        </a>
-                    </div>
+                </div>
                 </div>
 
                 <!-- ATIVIDADES NO DESTINO -->
-                <div class="mt-40 pt-32 border-t border-white/5 relative reveal reveal-up">
-                    <!-- Section Ambient Glow -->
-                    <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 blur-[120px] rounded-full pointer-events-none -translate-y-1/2 opacity-40"></div>
-
-                    <div class="max-w-4xl mb-16">
-                        <div class="inline-flex items-center gap-4 mb-6">
-                            <span class="w-12 h-[1px] bg-primary/40"></span>
-                            <p class="text-[12px] font-bold uppercase tracking-[0.6em] text-primary">Ecossistema Global</p>
+                <div class="mt-20 md:mt-40 pt-20 md:pt-32 border-t border-white/5 relative reveal reveal-up">
+                    <div class="max-w-4xl mb-12 md:mb-16">
+                        <div class="inline-flex items-center gap-3 mb-6 md:mb-8 text-primary overflow-hidden">
+                            <div class="h-[1px] w-8 md:w-12 bg-current"></div>
+                            <span class="text-[10px] uppercase tracking-[0.4em] font-black">Ecossistema Global</span>
                         </div>
-                        <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-8 tracking-tighter leading-tight">
-                            Explore seu <span class="text-primary italic font-light drop-shadow-[0_0_10px_rgba(var(--color-primary-rgb),0.2)]">destino sem fronteiras</span>
+                        <h2 class="font-display font-black text-white mb-6 md:mb-8 tracking-tighter leading-tight">
+                            Explore seu <br><span class="text-primary italic">destino sem fronteiras</span>
                         </h2>
-                        <p class="text-primary-light/70 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
-                            Além do nosso suporte personalizado, conectamos você às melhores plataformas do mundo para uma experiência completa no destino.
+                        <p class="text-primary-light/70 text-base md:text-xl font-light leading-relaxed max-w-2xl">
+                            Além do nosso suporte, conectamos você às melhores plataformas do mundo para uma experiência completa.
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-6xl">
-                        <!-- GetYourGuide Optimized -->
-                        <div class="group relative">
-                            <div class="absolute -inset-1 bg-gradient-to-br from-primary to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-700 rounded-[2.5rem] blur-xl"></div>
-                            <div class="bg-ink/60 backdrop-blur-3xl border border-white/10 p-10 lg:p-14 rounded-[2.5rem] transition-all duration-700 relative z-10 h-full flex flex-col hover:border-primary/40 hover:translate-y-[-12px] hover:shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
-                                <div class="flex items-center gap-5 mb-8">
-                                    <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-ink transition-all duration-500 shadow-inner border border-white/5">
-                                        <i data-lucide="compass" class="w-8 h-8"></i>
-                                    </div>
-                                    <h3 class="font-display font-bold text-3xl text-white tracking-tighter group-hover:text-primary transition-colors">GetYourGuide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                        <!-- GetYourGuide -->
+                        <div class="bg-white/[0.02] border border-white/10 p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] transition-all duration-500 hover:border-primary/40 flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-white/5 rounded-2xl flex items-center justify-center text-primary mb-8 border border-white/5">
+                                    <i data-lucide="compass" class="w-6 h-6 md:w-7 md:h-7"></i>
                                 </div>
-                                <p class="text-primary-light/60 text-base leading-relaxed mb-12 font-light group-hover:text-primary-light/90 transition-opacity">
-                                    Acesse tours exclusivos, ingressos fura-fila e transfers VIP com cancelamento flexível em qualquer destino do mundo.
+                                <h3 class="font-display font-black text-2xl text-white tracking-tighter mb-4 italic">GetYourGuide</h3>
+                                <p class="text-primary-light/60 text-sm md:text-base leading-relaxed mb-8 font-light">
+                                    Tours exclusivos, ingressos fura-fila e transfers VIP em qualquer destino do mundo.
                                 </p>
-                                <div class="mt-auto">
-                                    <a href="https://www.getyourguide.pt?partner_id=OQH7TN6&cmp=share_to_earn" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-4 py-5 rounded-2xl bg-white/5 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-[0.2em] hover:bg-primary hover:text-ink transition-all duration-400 group/btn">
-                                        Explorar GetYourGuide <i data-lucide="arrow-right" class="w-5 h-5 group-hover/btn:translate-x-2 transition-transform"></i>
-                                    </a>
-                                </div>
                             </div>
+                            <a href="https://www.getyourguide.pt?partner_id=OQH7TN6" target="_blank" class="btn-luxury btn-luxury-primary !w-full !py-4 text-[10px] uppercase tracking-widest font-black">
+                                Explorar Experiências <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
                         </div>
 
-                        <!-- Civitatis Optimized -->
-                        <div class="group relative">
-                            <div class="absolute -inset-1 bg-gradient-to-br from-primary to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-700 rounded-[2.5rem] blur-xl"></div>
-                            <div class="bg-ink/60 backdrop-blur-3xl border border-white/10 p-10 lg:p-14 rounded-[2.5rem] transition-all duration-700 relative z-10 h-full flex flex-col hover:border-primary/40 hover:translate-y-[-12px] hover:shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
-                                <div class="flex items-center gap-5 mb-8">
-                                    <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-ink transition-all duration-500 shadow-inner border border-white/5">
-                                        <i data-lucide="map-pinned" class="w-8 h-8"></i>
-                                    </div>
-                                    <h3 class="font-display font-bold text-3xl text-white tracking-tighter group-hover:text-primary transition-colors">Civitatis</h3>
+                        <!-- Civitatis -->
+                        <div class="bg-white/[0.02] border border-white/10 p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] transition-all duration-500 hover:border-primary/40 flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-white/5 rounded-2xl flex items-center justify-center text-primary mb-8 border border-white/5">
+                                    <i data-lucide="map-pinned" class="w-6 h-6 md:w-7 md:h-7"></i>
                                 </div>
-                                <p class="text-primary-light/60 text-base leading-relaxed mb-12 font-light group-hover:text-primary-light/90 transition-opacity">
-                                    Líder mundial em passeios guiados em português. Curadoria de experiências autênticas focada no conforto do viajante brasileiro.
+                                <h3 class="font-display font-black text-2xl text-white tracking-tighter mb-4 italic">Civitatis</h3>
+                                <p class="text-primary-light/60 text-sm md:text-base leading-relaxed mb-8 font-light">
+                                    Passeios guiados em português. Curadoria de experiências autênticas focada no brasileiro.
                                 </p>
-                                <div class="mt-auto">
-                                    <a href="https://www.civitatis.com/br/?ag_aid=57611" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-4 py-5 rounded-2xl bg-white/5 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-[0.2em] hover:bg-primary hover:text-ink transition-all duration-400 group/btn">
-                                        Explorar na Civitatis <i data-lucide="arrow-right" class="w-5 h-5 group-hover/btn:translate-x-2 transition-transform"></i>
-                                    </a>
-                                </div>
                             </div>
+                            <a href="https://www.civitatis.com/br/?ag_aid=57611" target="_blank" class="btn-luxury btn-luxury-primary !w-full !py-4 text-[10px] uppercase tracking-widest font-black">
+                                Ver Passeios <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
                         </div>
                     </div>
-                    <p class="text-[11px] text-primary/30 uppercase tracking-[0.5em] font-bold italic mt-16 text-center md:text-left">
-                        Curadoria estratégica KNJ TUR — Qualidade assegurada em cada destino global.
-                    </p>
                 </div>
-            </div>
 
                 <!-- CTA Final -->
-                <div class="relative py-24 md:py-32 rounded-[4rem] overflow-hidden text-center">
+                <div class="relative py-20 md:py-32 rounded-[2.5rem] md:rounded-[4rem] overflow-hidden text-center reveal reveal-up mt-20 md:mt-32">
                     <div class="absolute inset-0 z-0">
                         <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop" alt="Viagem dos Sonhos" class="w-full h-full object-cover opacity-20" referrerPolicy="no-referrer">
                         <div class="absolute inset-0 bg-ink/80"></div>
                     </div>
                     <div class="relative z-10 max-w-2xl mx-auto px-6">
-                        <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-8 tracking-tighter italic font-bold">Transforme seu <span class="text-primary italic">roteiro em arte.</span></h2>
-                        <p class="text-primary-light/60 text-lg mb-12 font-light">Deixe os detalhes com quem entende de excelência. Seu próximo destino começa aqui.</p>
-                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20meu%20próximo%20roteiro." target="_blank" class="btn-luxury btn-whatsapp !px-12">Quero meu Roteiro Exclusivo</a>
+                        <h2 class="font-display font-black text-white mb-6 md:mb-8 tracking-tighter leading-tight italic">Transforme seu <br><span class="text-primary italic">roteiro em arte.</span></h2>
+                        <p class="text-primary-light/60 text-base md:text-xl font-light mb-10 md:mb-12">Deixe os detalhes com quem entende de excelência. Seu próximo destino começa aqui.</p>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-luxury-primary !w-full sm:!w-auto">Quero meu Roteiro Exclusivo</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-ink pt-24 pb-12 text-white">
-        <div class="container mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 border-b border-white/5 pb-24">
-                <div class="flex flex-col items-start">
-                    <a href="../index.html" class="flex items-center gap-3 mb-8">
-                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto" referrerPolicy="no-referrer">
+    <!-- SECTION 6: FOOTER -->
+    <footer class="bg-ink pt-16 md:pt-24 pb-8 md:pb-12 text-white border-t border-white/5">
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24 border-b border-white/5 pb-16 md:pb-24">
+                <div class="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
+                    <a href="../index.html" class="flex items-center gap-3 mb-6 md:mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto" referrerPolicy="no-referrer">
                     </a>
-                    <p class="text-white/40 text-xs leading-loose max-w-[240px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                    <p class="text-white/40 text-[11px] leading-loose max-w-[280px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
                 </div>
 
-                <div class="flex flex-col gap-6">
-                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Navegação</h5>
-                    <nav class="flex flex-col gap-4 text-xs font-semibold text-white/60">
-                        <a href="../index.html" class="hover:text-primary">Home</a>
-                        <a href="../sobre-nos/" class="hover:text-primary">Sobre</a>
-                        <a href="../visto-americano/" class="hover:text-primary">Visto</a>
-                        <a href="../blog/" class="hover:text-primary">Blog</a>
-                        <a href="./" class="hover:text-primary">Viagens</a>
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Navegação</h5>
+                    <nav class="flex flex-col gap-3 text-xs font-medium text-white/50">
+                        <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                        <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
+                        <a href="../visto-americano/" class="hover:text-primary transition-colors">Visto</a>
+                        <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                        <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
                     </nav>
                 </div>
 
-                <div class="flex flex-col gap-6">
-                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Contato</h5>
-                    <div class="flex flex-col gap-4 text-xs font-semibold text-white/60">
-                        <span class="flex items-center gap-3"><i data-lucide="map-pin" size="14"></i> Jardim Dom Bosco, Indaiatuba - SP, 13333-000</span>
-                        <span class="flex items-center gap-3"><i data-lucide="mail" size="14"></i> kenji@knjtur.com</span>
-                        <span class="flex items-center gap-3"><i data-lucide="phone" size="14"></i> (11) 99408-5822</span>
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Contato</h5>
+                    <div class="flex flex-col gap-3 text-xs font-medium text-white/50">
+                        <span class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0"></i> Indaiatuba - SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-primary shrink-0"></i> kenji@knjtur.com</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i> (11) 99408-5822</span>
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-6">
-                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-bold">Social</h5>
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Social</h5>
                     <div class="flex gap-4">
-                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2">
-                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2.5">
+                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer" loading="lazy">
                         </a>
-                        <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-ink transition-all">
-                            <i data-lucide="message-circle" size="16"></i>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-                <p class="text-[10px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
-                <div class="text-[8px] uppercase tracking-widest text-white/10">
-                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[9px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-white/10 font-bold">
+                    DESIGN BY <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0]/60 hover:text-[#40E0D0] transition-colors">ORVALIA</a>
                 </div>
             </div>
         </div>
