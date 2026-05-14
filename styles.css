@@ -279,6 +279,10 @@ header.fixed.header-scrolled {
     line-height: 1.8;
 }
 
+.article-image {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .prose h2 {
     margin-top: 3.5rem;
     margin-bottom: 1.5rem;
@@ -459,10 +463,24 @@ header.fixed.header-scrolled {
     width: 100%;
 }
 
-/* Choice of selection */
+/*Choice of selection*/
 ::selection {
   background-color: var(--primary);
   color: var(--ink);
+}
+
+.page-transition-mask {
+    position: fixed;
+    inset: 0;
+    background: var(--ink-darkest);
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.loaded .page-transition-mask {
+    opacity: 0;
 }
 
 /* Scrollbar */

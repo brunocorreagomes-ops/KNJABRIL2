@@ -4,6 +4,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('KNJ TUR Static Site Initialized');
     
+    // Smooth Page Entry
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 100);
+
     // Lucide Icons Initialization
     if (window.lucide) {
         window.lucide.createIcons();

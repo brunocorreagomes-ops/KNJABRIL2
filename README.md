@@ -20,7 +20,7 @@ Este projeto está pronto para ser hospedado no GitHub Pages.
 4. O workflow configurado em `.github/workflows/deploy.yml` fará o deploy automático sempre que você fizer um `push` para a branch `main`.
 
 ### URLs Limpas
-A estrutura de pastas (`/pasta/index.html`) garante que o site funcione com URLs amigáveis (ex: `knjtur.com.br/visto-americano`) sem a necessidade de extensões `.html`.
+A estrutura de pastas (`/pasta/index.html`) garante que o site funcione com URLs amigáveis (ex: `www.knjtur.com/visto-americano`) sem a necessidade de extensões `.html`.
 
 ## Design
 - **Cores:** #0A0A0A (Fundo), #FF8C00 (Destaque Laranja).
