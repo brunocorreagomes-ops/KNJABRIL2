@@ -58,12 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuBtn && mobileMenu) {
         const toggleMenu = (show) => {
             if (show) {
-                mobileMenu.classList.remove('invisible', 'opacity-0');
-                mobileMenu.classList.add('visible', 'opacity-100');
+                mobileMenu.classList.add('active');
                 document.body.style.overflow = 'hidden';
             } else {
-                mobileMenu.classList.add('invisible', 'opacity-0');
-                mobileMenu.classList.remove('visible', 'opacity-100');
+                mobileMenu.classList.remove('active');
                 document.body.style.overflow = '';
             }
         };

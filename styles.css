@@ -25,51 +25,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Luxury Typography Defaults (Mobile First) */
+/* Luxury Typography Defaults (Fluid & Mobile First) */
 h1 {
-    font-size: 2.25rem;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     line-height: 1.1;
     letter-spacing: -0.04em;
-    margin-bottom: 1.5rem;
+    font-weight: 900;
 }
 
 h2 {
-    font-size: 1.85rem;
-    line-height: 1.2;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.1;
     letter-spacing: -0.03em;
-    margin-bottom: 1.25rem;
+    font-weight: 900;
 }
 
 h3 {
-    font-size: 1.5rem;
-    line-height: 1.3;
-    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 800;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 700;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 4rem;
-    }
-    h2 {
-        font-size: 3rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 4rem;
-    }
 }
 
 button {
@@ -187,14 +166,11 @@ header.fixed.header-scrolled {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
-    header img {
-        height: 2.25rem !important;
-    }
 }
 
 /* Mobile Menu Base State */
 #mobile-menu {
-    z-index: 100 !important;
+    z-index: 120 !important;
 }
 
 /* Mobile Menu Active State */
@@ -207,31 +183,25 @@ header.fixed.header-scrolled {
 /* Container Padding Foundations */
 .container {
     width: 100%;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 @media (min-width: 768px) {
     .container {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 }
 
 /* Section Spacing Foundations */
 section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -362,10 +332,10 @@ article header div.absolute.inset-0.bg-gradient-to-t {
 }
 
 .prose h2 {
-    margin-top: 3.5rem;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 1.5rem;
-    font-size: 2.25rem;
-    line-height: 1.2;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    line-height: 1.1;
     color: white;
     font-style: italic;
     font-family: var(--font-display);
@@ -373,16 +343,18 @@ article header div.absolute.inset-0.bg-gradient-to-t {
 }
 
 .prose h3 {
-    margin-top: 2.5rem;
+    margin-top: clamp(1.5rem, 3vw, 3rem);
     margin-bottom: 1rem;
-    font-size: 1.75rem;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
     color: white;
     font-family: var(--font-display);
+    font-weight: 800;
 }
 
 .prose p {
     margin-bottom: 1.5rem;
     opacity: 0.8;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
 .prose ul, .prose ol {
@@ -394,6 +366,7 @@ article header div.absolute.inset-0.bg-gradient-to-t {
     margin-bottom: 1rem;
     position: relative;
     list-style: none;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
 .prose ul li::before {
@@ -412,25 +385,31 @@ article header div.absolute.inset-0.bg-gradient-to-t {
 .cta-box {
     background: rgba(232, 132, 42, 0.05);
     border: 1px solid rgba(232, 132, 42, 0.1);
-    padding: 3.5rem;
-    border-radius: 3rem;
+    padding: clamp(2rem, 5vw, 5rem);
+    border-radius: clamp(1.5rem, 4vw, 4rem);
     text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(3rem, 8vw, 8rem);
+}
+
+.blog-card {
+    border-radius: clamp(1.5rem, 3vw, 3rem) !important;
+}
+
+.scroll-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.scroll-hide::-webkit-scrollbar {
+    display: none;
 }
 
 @media (max-width: 767px) {
-    .prose h2 {
-        font-size: 1.85rem;
-        margin-top: 2.5rem;
-    }
-    .cta-box {
-        padding: 2.5rem 1.5rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
     .prose p {
-        font-size: 1.05rem;
         line-height: 1.7;
     }
 }
