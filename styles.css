@@ -253,9 +253,8 @@ section {
 
 /* Adjust aspect ratios */
 .aspect-video, .aspect-square, .blog-card a, article header div[class*="aspect-"] {
-    aspect-ratio: 16 / 10 !important;
+    aspect-ratio: auto !important;
     height: auto !important;
-    min-height: 240px !important;
     width: 100% !important;
     position: relative !important;
     overflow: hidden !important;
@@ -278,10 +277,10 @@ img.article-hero,
 article header img,
 .blog-card img {
     width: 100% !important;
-    height: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
     display: block !important;
-    object-fit: cover !important;
-    object-position: center !important;
+    border-radius: 12px;
 }
 
 /* Tame the gradient */
@@ -400,6 +399,19 @@ article header div.absolute.inset-0.bg-gradient-to-t {
 article.container.mx-auto.px-6.max-w-4xl img.w-full.h-full.object-cover {
     border-radius: 1rem !important;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Responsive Table Wrapper */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.table-responsive table {
+    width: 100%;
+    min-width: 600px;
 }
 
 .scroll-hide {
