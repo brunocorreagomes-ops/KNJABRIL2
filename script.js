@@ -9,21 +9,41 @@ document.addEventListener('DOMContentLoaded', () => {
         window.lucide.createIcons();
     }
 
-    // Scroll Header Effect
+    // Scroll Performance Optimization
     const header = document.querySelector('header');
-    if (header) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 40) {
-                header.classList.add('header-scrolled');
-                header.classList.add('bg-ink/95', 'shadow-2xl');
-                header.classList.remove('bg-ink/80');
-            } else {
-                header.classList.remove('header-scrolled');
-                header.classList.remove('bg-ink/95', 'shadow-2xl');
-                header.classList.add('bg-ink/80');
-            }
-        });
+    const floatingActions = document.getElementById('floating-actions');
+    let ticking = false;
+
+    function handleScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const scrollY = window.scrollY;
+                
+                if (header) {
+                    if (scrollY > 40) {
+                        header.classList.add('header-scrolled', 'bg-ink/95', 'shadow-2xl');
+                        header.classList.remove('bg-ink/80');
+                    } else {
+                        header.classList.remove('header-scrolled', 'bg-ink/95', 'shadow-2xl');
+                        header.classList.add('bg-ink/80');
+                    }
+                }
+
+                if (floatingActions) {
+                    if (scrollY > 500) {
+                        floatingActions.classList.remove('opacity-0', 'invisible', 'translate-y-10');
+                        floatingActions.classList.add('opacity-100', 'visible', 'translate-y-0');
+                    } else {
+                        floatingActions.classList.add('opacity-0', 'invisible', 'translate-y-10');
+                        floatingActions.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                    }
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
     }
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
@@ -72,21 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Floating buttons visibility and action
-    const floatingActions = document.getElementById('floating-actions');
     const backToTop = document.getElementById('back-to-top');
-    
-    if (floatingActions) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                floatingActions.classList.remove('opacity-0', 'invisible', 'translate-y-10');
-                floatingActions.classList.add('opacity-100', 'visible', 'translate-y-0');
-            } else {
-                floatingActions.classList.add('opacity-0', 'invisible', 'translate-y-10');
-                floatingActions.classList.remove('opacity-100', 'visible', 'translate-y-0');
-            }
-        });
-    }
 
     if (backToTop) {
         backToTop.addEventListener('click', () => {

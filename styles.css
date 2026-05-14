@@ -190,19 +190,9 @@ header.fixed.header-scrolled {
     .rounded-\[4rem\], .rounded-\[3rem\], .rounded-\[2\.5rem\] {
         border-radius: 1.75rem !important;
     }
-    .blog-card a {
-        aspect-ratio: 16 / 10 !important;
-    }
-    article header [class*="aspect-video"] {
-        aspect-ratio: 16 / 10 !important;
-    }
-    @media (min-width: 768px) {
-        .blog-card a {
-            aspect-ratio: 4 / 5 !important;
-        }
-        article header [class*="aspect-video"] {
-            aspect-ratio: 16 / 9 !important;
-        }
+    .blog-card a, 
+    article header div[class*="aspect-"] {
+        aspect-ratio: 16 / 11 !important;
     }
     .blog-post img {
         filter: none !important;
@@ -216,15 +206,31 @@ header.fixed.header-scrolled {
     }
 }
 
+@media (min-width: 768px) {
+    .blog-card a {
+        aspect-ratio: 4 / 5 !important;
+    }
+    article header div[class*="aspect-"] {
+        aspect-ratio: 16 / 9 !important;
+    }
+}
+
 /* Animations */
 .reveal {
   opacity: 0;
-  transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.19, 1, 0.22, 1), transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: opacity, transform;
 }
 
-.reveal-up { transform: translateY(60px); }
-.reveal-left { transform: translateX(-60px); }
-.reveal-right { transform: translateX(60px); }
+.reveal-up { transform: translateY(30px); }
+.reveal-left { transform: translateX(-30px); }
+.reveal-right { transform: translateX(30px); }
+
+@media (max-width: 640px) {
+  .reveal {
+    transition-duration: 0.8s;
+  }
+}
 
 .active.reveal {
   opacity: 1;
