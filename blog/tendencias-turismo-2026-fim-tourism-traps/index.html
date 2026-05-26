@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendências de Turismo 2026: Destinos Acessíveis e o Fim das "Tourism Traps" | KNJ TUR</title>
+    <meta name="description" content="Descubra as tendências de turismo para 2026 que fogem do luxo. Conheça as 'coolcations', slow travel e destinos fora do radar com voos do Brasil.">
+    <meta name="keywords" content="Trends de viagens 2026, Coolcations Europa, Destinos secundários baratos, Slow travel Brasil, Evitar armadilhas de turistas">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8842A',
+                        'primary-light': '#E5D5C0',
+                        ink: '#111111',
+                        'ink-darkest': '#0A0A0A',
+                        surface: '#0A0A0A',
+                        'surface-variant': '#141414',
+                        'on-surface': '#FFFFFF',
+                        'on-surface-variant': '#A0A0A0',
+                        whatsapp: '#25D366',
+                        gold: '#C9A84C',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Poppins', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/30">
+    <!-- SECTION 1: HEADER -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-[110] bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
+        <div class="container flex justify-between items-center text-white">
+            <a href="../../index.html" class="flex items-center gap-1 group" aria-label="Voltar para Home">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-8 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
+            </a>
+            
+            <div class="flex items-center gap-4 md:gap-10">
+                <nav class="hidden lg:flex items-center gap-10 text-[11px] font-black uppercase tracking-[0.3em] text-primary-light/60">
+                    <a href="../../index.html" class="nav-link hover:text-primary transition-colors">Home</a>
+                    <a href="../../sobre-nos/" class="nav-link hover:text-primary transition-colors">Sobre</a>
+                    <a href="../../visto-americano/" class="nav-link hover:text-primary transition-colors">Visto</a>
+                    <a href="../../viagens/" class="nav-link hover:text-primary transition-colors">Viagens</a>
+                    <a href="../" class="nav-link hover:text-primary transition-colors text-primary italic underline decoration-primary underline-offset-8">Blog</a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp !px-6 !py-2.5 !text-[10px] font-black uppercase tracking-widest !text-ink">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="lg:hidden text-primary p-2 focus:outline-none flex items-center gap-2" aria-label="Abrir Menu">
+                    <span class="text-[10px] font-black uppercase tracking-widest hidden sm:block">Menu</span>
+                    <i data-lucide="menu" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 bg-ink z-[120] flex flex-col opacity-0 invisible transition-all duration-500 overflow-y-auto">
+        <div class="flex justify-between items-center px-6 h-20 border-b border-white/5">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-7 w-auto filter brightness-110">
+            <button id="close-menu" class="text-primary p-2 focus:outline-none flex items-center gap-2" aria-label="Fechar Menu">
+                <span class="text-[10px] font-black uppercase tracking-widest">Fechar</span>
+                <i data-lucide="x" class="w-7 h-7"></i>
+            </button>
+        </div>
+        
+        <nav class="flex flex-col gap-1 p-6 md:p-12">
+            <a href="../../index.html" class="text-3xl md:text-5xl font-display font-black text-white py-4 flex justify-between items-center group italic border-b border-white/5 tracking-tighter">Home <i data-lucide="chevron-right" class="text-primary opacity-50 w-6 h-6"></i></a>
+            <a href="../../sobre-nos/" class="text-3xl md:text-5xl font-display font-black text-white py-4 flex justify-between items-center group italic border-b border-white/5 tracking-tighter">Sobre <i data-lucide="chevron-right" class="text-primary opacity-50 w-6 h-6"></i></a>
+            <a href="../../visto-americano/" class="text-3xl md:text-5xl font-display font-black text-white py-4 flex justify-between items-center group italic border-b border-white/5 tracking-tighter">Visto <i data-lucide="chevron-right" class="text-primary opacity-50 w-6 h-6"></i></a>
+            <a href="../../viagens/" class="text-3xl md:text-5xl font-display font-black text-white py-4 flex justify-between items-center group italic border-b border-white/5 tracking-tighter">Viagens <i data-lucide="chevron-right" class="text-primary opacity-50 w-6 h-6"></i></a>
+            <a href="../" class="text-3xl md:text-5xl font-display font-black text-primary py-4 flex justify-between items-center group italic border-b border-white/5 tracking-tighter">Blog <i data-lucide="chevron-right" class="text-primary w-6 h-6"></i></a>
+        </nav>
+
+        <div class="mt-auto p-10 bg-white/[0.02] border-t border-white/5">
+            <p class="text-[10px] text-white/30 uppercase tracking-[0.4em] font-black mb-8 italic text-center">Exclusividade KNJ TUR</p>
+            <a href="https://wa.me/5511994085822" class="btn-luxury btn-whatsapp w-full !py-6 font-black text-[12px] uppercase tracking-widest text-ink block text-center">Começar Consultoria VIP</a>
+            
+            <div class="flex gap-8 mt-12 justify-center">
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-52 pb-20">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <header class="mb-12">
+                <a href="../" class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-[10px] md:text-xs mb-8 hover:underline">
+                    <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Voltar ao Blog
+                </a>
+                <div class="flex flex-wrap items-center justify-between gap-6 mb-6 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+                    <div class="flex items-center gap-4 text-primary">
+                        <span>Tendências</span>
+                        <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                        <div class="flex items-center gap-1 text-on-surface-variant">
+                            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                            <span>26 de Maio, 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black leading-[1.2] text-white mb-8 tracking-tighter">
+                    Tendências de Turismo 2026: <br>
+                    <span class="text-primary italic font-light leading-tight">Destinos Acessíveis e Viagens Sem Ostentação</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg md:text-xl mb-12 leading-relaxed max-w-3xl">Descubra as tendências de turismo para 2026 que fogem do luxo artificial. Conheça as "coolcations", slow travel e destinos fora do radar com voos inteligentes saindo do Brasil.</p>
+                
+                <div class="overflow-hidden border border-white/5 mb-12 shadow-2xl relative group article-image">
+                    <img src="https://i.ibb.co/qMJ6XRPR/Knj-cool-materia.webp" alt="Tendências de Turismo 2026" class="article-hero w-full h-auto block transition-transform duration-700 md:group-hover:scale-105 animate-fade-in-soft" loading="eager" decoding="async">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface/40 to-transparent"></div>
+                </div>
+            </header>
+
+            <div class="prose max-w-none">
+                <p>O mercado de viagens mudou drasticamente. Se até pouco tempo atrás o foco das redes sociais era ostentar em resorts multimilionários ou encarar filas de horas para a foto perfeita em capitais superlotadas, os dados globais de 2026 apontam para a direção oposta. O viajante moderno, sentindo o peso da inflação global e o cansaço do <em>overtourism</em> (turismo de massa), está fazendo escolhas mais inteligentes, econômicas e autênticas.</p>
+
+                <p>Como jornalista investigativo de turismo, cruzei os relatórios mais recentes do <em>Global Web Index (GWI)</em>, tendências do <em>Airbnb</em> e dados do <em>Meeting Brasil</em> para filtrar os ruídos da internet. O resultado? O luxo de hoje não tem a ver com etiquetas caras, mas com o "privilégio" do tempo, da natureza e de descobrir o que não está inflacionado.</p>
+
+                <p>Se você está planejando as próximas férias e quer fazer o seu dinheiro (em Real) render o máximo de experiências, aqui está o que realmente dita o mercado de viagens em 2026 — sem romantismos e sem clichês.</p>
+
+                <h2>A Ascensão da "Coolcation": O Refúgio Estratégico</h2>
+                <p>As ondas de calor extremo no hemisfério norte mudaram a malha aérea e as temporadas de alta. A chamada <strong>coolcation</strong> (férias em climas mais frios) deixou de ser nicho para virar a solução de quem quer fugir das multidões suadas do verão europeu e dos preços exorbitantes.</p>
+
+                <h3>Destinos e Malha Aérea Inteligente</h3>
+                <p>Esqueça o sul da Itália em agosto. O foco europeu agora mira o Norte e as regiões de clima ameno. A <strong>Islândia</strong> e a costa da <strong>Croácia</strong> (como Split, que ainda mantém brisas agradáveis no início do verão) registram aumento brutal de buscas.</p>
+                
+                <ul class="space-y-4">
+                    <li><strong class="text-white">Como chegar:</strong> As passagens aéreas saindo de <strong>Guarulhos (GRU)</strong> ou <strong>Galeão (GIG)</strong> para hubs como Frankfurt (Lufthansa) ou Paris (Air France) permitem conexões diretas para o norte da Europa.</li>
+                    <li><strong class="text-white text-primary">A sacada para brasileiros:</strong> Se a Europa com o Euro batendo na casa dos R$ 5,80 a R$ 6,00 assusta o bolso, a <em>coolcation</em> sul-americana é a grande aposta. A <strong>Patagônia (Argentina e Chilena)</strong> e a <strong>Cordilheira dos Andes</strong> oferecem a mesma imersão na natureza por uma fração do preço. Voos de GRU ou GIG para Buenos Aires ou Santiago (Latam, Gol, Jetsmart, Sky) costumam oscilar entre R$ 1.500 e R$ 2.200 (ida e volta) em emissões antecipadas.</li>
+                </ul>
+
+                <h2>Destinos Secundários (Dupe Destinations): Qualidade sem Extorsão</h2>
+                <p>A equação é simples: capitais famosas cobram "taxa de fama". O viajante que prioriza o orçamento (<em>budget-conscious</em>) está migrando em massa para os <strong>Dupe Destinations</strong> — cidades que oferecem a mesma vibração, arquitetura e gastronomia dos grandes centros, mas custam até 40% menos.</p>
+
+                <h3>Portugal Além de Lisboa e Porto</h3>
+                <p>O turista brasileiro já entendeu que Lisboa ficou cara. A tendência de 2026 é o <strong>Alentejo</strong> e o <strong>Minho</strong>. São regiões com forte enoturismo, vilas históricas, hospedagens com escala reduzida e culinária artesanal onde o "prato do dia" ainda custa algo justo.</p>
+                
+                <ul class="space-y-4">
+                    <li><strong class="text-white">Logística de Voo:</strong> Aproveite a rota da Azul saindo de <strong>Viracopos (VCP)</strong> direto para Lisboa, alugue um carro no próprio aeroporto e fuja imediatamente para o interior.</li>
+                </ul>
+
+                <h3>O Encanto do Marrocos</h3>
+                <p>Para quem busca imersão cultural absoluta, o Marrocos é a estrela econômica de 2026. Cidades como Chefchaouen e os roteiros de deserto entregam uma experiência visual e sensorial riquíssima. Como a moeda (Dirham marroquino) é extremamente favorável ao Real, os gastos locais em alimentação e transporte surpreendem positivamente.</p>
+
+                <h2>Slow Travel e "Playcations": Propósito no Brasil</h2>
+                <p>As pesquisas do <em>Airbnb</em> de 2026 mostram o domínio das <em>playcations</em> (viagens centradas em hobbies) e do <em>slow travel</em> (viagens mais longas em apenas um destino, vivenciando o cotidiano). Não é sobre ticar 10 países em 15 dias, mas sobre estar presente.</p>
+                
+                <p>Se o foco é economizar em passagens aéreas internacionais, o <strong>Ecoturismo e o Turismo de Experiência no Brasil</strong> explodiram em organização e qualidade infraestrutural:</p>
+                
+                <ul class="space-y-4">
+                    <li><strong class="text-white">Serras Gerais (Tocantins) e Jalapão:</strong> O antídoto perfeito para praias lotadas. Acesso via aeroporto de Palmas, com voos frequentes de GRU e VCP.</li>
+                    <li><strong class="text-white">Enoturismo na Serra Gaúcha (fora de Gramado):</strong> Cidades como Flores da Cunha e Nova Pádua oferecem turismo de qualidade europeia, com degustações focadas e zero aglomeração de parques temáticos.</li>
+                    <li><strong class="text-white text-primary">Rota do Sul Autêntico:</strong> Nova Veneza (SC) e Laguna têm despontado para quem busca história e gastronomia sem preços inflacionados.</li>
+                </ul>
+
+                <h2>O "Pulo do Gato": Documentação e Planejamento Prático</h2>
+                <p>Ser um viajante inteligente em 2026 exige mais do que saber o destino em alta; exige precisão burocrática e financeira.</p>
+
+                <div class="bg-primary/5 p-8 rounded-3xl border border-primary/20 my-12">
+                    <h3 class="text-white mt-0 mb-6 flex items-center gap-2"><i data-lucide="shield-check" class="text-primary w-6 h-6"></i> Regras de Ouro do Planejamento 2026</h3>
+                    <ol class="space-y-4 list-none p-0 m-0 text-[13px]">
+                        <li class="flex gap-4">
+                            <span class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold shrink-0">1</span>
+                            <span><strong>Regras do ETIAS para a Europa:</strong> O novo sistema de autorização de viagens do Espaço Schengen já é uma realidade na Europa. Brasileiros isentos de visto agora precisam preencher o formulário online e pagar a taxa (7 Euros) antes de embarcar. Não deixe para a última hora, pois sistemas podem demorar para aprovar e companhias aéreas impedem embarques sem a devida liberação.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold shrink-0">2</span>
+                            <span><strong>Conexões autolinkadas:</strong> Evite comprar voos fracionados de companhias low-cost independentes se não tiver muito intervalo. Um único atraso pode arruinar toda a viagem caso os bilhetes não estejam unificados.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold shrink-0">3</span>
+                            <span><strong>A Regra dos 90 Dias:</strong> Para viagens de alta distância, o algoritmo das aéreas tem oferecido o melhor custo-benefício em emissões com 90 a 110 dias de antecedência.</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="tip-box" style="background: rgba(232, 132, 42, 0.05); border: 1px solid rgba(232, 132, 42, 0.2); border-left: 4px solid #E8842A; padding: 1.5rem 2rem; border-radius: 0 2rem 2rem 0; margin: 2.5rem 0;">
+                    <p style="margin:0; font-size: 15px; color: #E5D5C0; line-height: 1.6;"><strong style="color: #E8842A; text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; display: block; margin-bottom: 0.5rem;">Dica Especialista KNJ</strong> "Os viajantes inteligentes de 2026 planejam a emissão e a burocracia do ETIAS e do passaporte de forma rigorosa. A consultoria profissional reduz em até 30% os custos gerais com conexões perfeitas."</p>
+                </div>
+
+                <p class="italic text-on-surface-variant/80 text-sm mb-12"><strong>Palavras-chave LSI:</strong> Trends de viagens 2026, Coolcations Europa, Destinos secundários baratos, Slow travel Brasil, Evitar armadilhas de turistas.</p>
+
+                <div class="cta-box mt-20 text-center">
+                    <h3 class="text-white">Organize Sua Viagem Estratégica com Quem Entende</h3>
+                    <p class="max-w-xl mx-auto mb-10 text-primary-light/60">Desbravar os destinos de 2026 gastando menos exige estratégia de quem monitora a malha aérea e as variações de câmbio diariamente. Evite cair nas "armadilhas para turistas" e fuja da burocracia de voos mal conectados.</p>
+                    <div class="flex flex-col md:flex-row gap-6 justify-center">
+                        <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20desenhar%20um%20roteiro%20personalizado%20para%20as%20tendências%20de%20turismo%202026." target="_blank" class="btn-luxury btn-whatsapp !px-12 !py-5">
+                            Falar com especialista da KNJ Tur
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Author -->
+            <div class="flex items-center gap-6 pt-12 border-t border-white/10 mt-20">
+                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary shrink-0 shadow-lg">
+                    <img src="https://i.ibb.co/k2rZHqBx/kenji-site-red.webp" alt="Kenji" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div>
+                    <div class="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-1">Autor do Artigo</div>
+                    <h4 class="text-2xl font-display font-black text-white mb-1">Kenji</h4>
+                    <p class="text-on-surface-variant text-sm">Consultor Estratégico e Fundador da KNJ TUR</p>
+                </div>
+            </div>
+
+            <!-- More Posts -->
+            <section class="mt-20 pt-20 border-t border-white/5">
+                <h2 class="text-2xl md:text-3xl font-display font-bold text-white mb-10 flex items-center gap-3 italic tracking-tight text-[#E8842A]">
+                    <i data-lucide="sparkles"></i> Veja Também
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6 text-on-surface-variant">
+                    <a href="../albania-tendencia-2026/" class="group p-6 rounded-3xl bg-surface-variant/30 border border-white/5 hover:border-primary/40 transition-all flex flex-col gap-4">
+                        <div class="flex items-center gap-3 text-primary text-[10px] font-bold uppercase tracking-widest text-[#E8842A]">
+                            <i data-lucide="map" size="14"></i> Albânia
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-tight">Albânia: A Tendência Europeia de 2026</h3>
+                        <div class="mt-auto pt-4 flex items-center justify-between border-t border-white/5">
+                            <span class="text-primary text-[10px] font-black uppercase tracking-[0.2em] italic group-hover:gap-3 transition-all flex items-center gap-2">
+                                Ler Agora <i data-lucide="arrow-right" size="14"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="../alternativas-turismo-massa-europa-2026/" class="group p-6 rounded-3xl bg-surface-variant/30 border border-white/5 hover:border-primary/40 transition-all flex flex-col gap-4">
+                        <div class="flex items-center gap-3 text-primary text-[10px] font-bold uppercase tracking-widest text-[#E8842A]">
+                            <i data-lucide="plane" size="14"></i> Alternativas
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-tight">Alternativas ao Turismo de Massa na Europa</h3>
+                        <div class="mt-auto pt-4 flex items-center justify-between border-t border-white/5">
+                            <span class="text-primary text-[10px] font-black uppercase tracking-[0.2em] italic group-hover:gap-3 transition-all flex items-center gap-2">
+                                Ler Agora <i data-lucide="arrow-right" size="14"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="../coolcation-turismo-regenerativo-artico-2026/" class="group p-6 rounded-3xl bg-surface-variant/30 border border-white/5 hover:border-primary/40 transition-all flex flex-col gap-4">
+                        <div class="flex items-center gap-3 text-primary text-[10px] font-bold uppercase tracking-widest text-[#E8842A]">
+                            <i data-lucide="globe" size="14"></i> Regenerativo
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-tight">Coolcation e Turismo Regenerativo no Ártico</h3>
+                        <div class="mt-auto pt-4 flex items-center justify-between border-t border-white/5">
+                            <span class="text-primary text-[10px] font-black uppercase tracking-[0.2em] italic group-hover:gap-3 transition-all flex items-center gap-2">
+                                Ler Agora <i data-lucide="arrow-right" size="14"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- SECTION 6: FOOTER -->
+    <footer class="bg-ink pt-16 md:pt-24 pb-8 md:pb-12 text-white border-t border-white/5">
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24 border-b border-white/5 pb-16 md:pb-24">
+                <div class="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
+                    <a href="../../index.html" class="flex items-center gap-3 mb-6 md:mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto" referrerPolicy="no-referrer" loading="lazy">
+                    </a>
+                    <p class="text-white/40 text-[11px] leading-loose max-w-[280px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                </div>
+
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Navegação</h5>
+                    <nav class="flex flex-col gap-3 text-xs font-medium text-white/50">
+                        <a href="../../index.html" class="hover:text-primary transition-colors">Home</a>
+                        <a href="../../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
+                        <a href="../../visto-americano/" class="hover:text-primary transition-colors">Visto</a>
+                        <a href="../../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                        <a href="../../blog/" class="hover:text-primary transition-colors text-white">Blog</a>
+                    </nav>
+                </div>
+
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Contato</h5>
+                    <div class="flex flex-col gap-3 text-xs font-medium text-white/50">
+                        <span class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0"></i> Indaiatuba - SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-primary shrink-0"></i> kenji@knjtur.com</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i> (11) 99408-5822</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Social</h5>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2.5">
+                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer" loading="lazy">
+                        </a>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[9px] text-white/20 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-white/10 font-bold">
+                    DESIGN BY <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0]/60 hover:text-[#40E0D0] transition-colors">ORVALIA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div id="floating-actions" class="floating-actions opacity-0 invisible translate-y-10 transition-all duration-500">
+        <!-- WhatsApp Float -->
+        <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="float-btn float-whatsapp" title="Falar no WhatsApp">
+            <i data-lucide="message-circle" size="28"></i>
+        </a>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="float-btn float-top" title="Voltar ao topo">
+            <i data-lucide="chevron-up" size="28"></i>
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>
