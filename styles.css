@@ -726,3 +726,95 @@ article.container.mx-auto.px-6.max-w-4xl img.w-full.h-full.object-cover {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ==========================================================================
+   PREMIUM CUSTOM UX & MOBILE RESPONSIVENESS REFINEMENTS
+   ========================================================================== */
+
+/* 1. Elegant Header Nav-Link Dot Indicator */
+.nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--primary, #E8842A);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+
+.nav-link.active {
+    color: var(--primary, #E8842A) !important;
+}
+
+/* 2. Tactile Touch & Click Ripple Mimic on Mobile/Desktop Interaction */
+#menu-btn, #close-menu, .faq-trigger, .btn-luxury, .float-btn, .blog-card, .btn-whatsapp {
+    transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.25s, opacity 0.25s, box-shadow 0.25s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#menu-btn:active, #close-menu:active, .faq-trigger:active, .btn-luxury:active, .float-btn:active {
+    transform: scale(0.96) !important;
+}
+
+/* 3. Luxury Pulsing Wave Ripple for Conversion WhatsApp Float */
+@keyframes WhatsAppRipple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5), 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0), 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.float-whatsapp {
+    background-color: #25D366;
+    color: white;
+    animation: WhatsAppRipple 3s infinite cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* 4. Elegant Focus Outline Ring for Premium Keyboard Access */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--primary, #E8842A);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* 5. Custom Premium Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222222;
+    border-radius: 5px;
+    border: 2px solid #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary, #E8842A);
+}
+

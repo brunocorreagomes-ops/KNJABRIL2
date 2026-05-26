@@ -102,6 +102,85 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ==========================================================================
+    // EXTRA UX AND USER NAVIGATION EXPERIENCE ENHANCEMENTS (DESKTOP & MOBILE)
+    // ==========================================================================
+
+    // Dynamic Navigation Highlighting & Inline styles clean-up
+    const uXNormalizeActiveNavs = () => {
+        const path = window.location.pathname;
+        const navLinks = document.querySelectorAll('header .nav-link, #mobile-menu nav a');
+        
+        // Define clean category routing checks
+        let activePage = 'home';
+        if (path.includes('/sobre-nos/')) activePage = 'sobre';
+        else if (path.includes('/visto-americano/')) activePage = 'visto';
+        else if (path.includes('/viagens/')) activePage = 'viagens';
+        else if (path.includes('/blog/')) activePage = 'blog';
+        else if (path.includes('/politica-de-privacidade/') || path.includes('/termos-de-uso/')) activePage = 'none';
+
+        navLinks.forEach(link => {
+            // Remove hardcoded static styles in HTML so premium CSS styles control the visual presentation
+            link.classList.remove('underline', 'decoration-primary', 'underline-offset-8', 'italic', 'text-primary');
+            
+            const href = link.getAttribute('href') || '';
+            let isActive = false;
+
+            if (activePage === 'home') {
+                if (href.endsWith('index.html') || href === '/' || href === '../../index.html' || href === '../index.html' || href === './index.html' || href === '') {
+                    // Make sure it doesn't match subfolders
+                    if (!href.includes('sobre-nos') && !href.includes('visto-americano') && !href.includes('viagens') && !href.includes('blog')) {
+                        isActive = true;
+                    }
+                }
+            } else if (activePage === 'sobre' && href.includes('sobre-nos')) {
+                isActive = true;
+            } else if (activePage === 'visto' && href.includes('visto-americano')) {
+                isActive = true;
+            } else if (activePage === 'viagens' && (href.includes('viagens') || href.includes('esim'))) {
+                isActive = true;
+            } else if (activePage === 'blog' && href.includes('blog')) {
+                isActive = true;
+            }
+
+            if (isActive) {
+                link.classList.add('active');
+                if (link.closest('#mobile-menu')) {
+                    link.classList.add('text-primary');
+                }
+            } else {
+                link.classList.remove('active');
+                if (link.closest('#mobile-menu')) {
+                    link.classList.remove('text-primary');
+                }
+            }
+        });
+    };
+    uXNormalizeActiveNavs();
+
+    // Automatic Staggering Delay Assignment for Reveal Grids
+    document.querySelectorAll('.grid, .reveal-group, .reveal-container').forEach(container => {
+        const children = container.querySelectorAll('.reveal');
+        if (children.length > 1) {
+            children.forEach((child, index) => {
+                // Ensure we do not override pre-existing explicit delay classes
+                if (!child.className.includes('reveal-delay-') && !child.style.transitionDelay) {
+                    child.style.transitionDelay = `${(index % 4) * 0.12}s`;
+                }
+            });
+        }
+    });
+
+    // Close Mobile Menu on Outside Tap / Click for intuitive user workspace exit
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
     // Scroll Reveal Animation Logic
     const revealElements = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
