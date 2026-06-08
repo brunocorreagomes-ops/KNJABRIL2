@@ -203,38 +203,130 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => el.classList.add('active'));
     }
 
-    // Global Share Functionality
-    const shareButtons = document.querySelectorAll('.share-btn');
-    shareButtons.forEach(btn => {
-        btn.addEventListener('click', async () => {
-            const url = window.location.href;
-            const title = document.title;
+    // Global Share & Dynamic Article Share Section Injection
+    const initArticleSharing = () => {
+        const isBlogArticle = window.location.pathname.includes('/blog/') && 
+                             !document.getElementById('blog-posts-grid') &&
+                             document.querySelector('article');
 
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: title,
-                        url: url
-                    });
-                } catch (err) {
-                    console.log('Share cancelled or failed:', err);
-                }
-            } else {
-                // Fallback: Copy to clipboard
-                try {
-                    await navigator.clipboard.writeText(url);
-                    const originalContent = btn.innerHTML;
-                    btn.innerHTML = '<i data-lucide="check" size="14"></i> URL Copiada!';
-                    if (window.lucide) window.lucide.createIcons();
-                    setTimeout(() => {
-                        btn.innerHTML = originalContent;
-                        if (window.lucide) window.lucide.createIcons();
-                    }, 2000);
-                } catch (err) {
-                    console.error('Failed to copy:', err);
-                }
+        if (!isBlogArticle) return;
+
+        const prose = document.querySelector('.prose');
+        if (prose && !document.querySelector('.share-section')) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+
+            // 1. Dynamic metadata row share button if missing
+            const metaRow = document.querySelector('article header div.flex.flex-wrap.items-center.justify-between') || 
+                            document.querySelector('article header div.flex-wrap') || 
+                            document.querySelector('article header .flex');
+            if (metaRow && !metaRow.querySelector('.share-btn')) {
+                const shareBtn = document.createElement('button');
+                shareBtn.className = 'share-btn flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#E8842A] hover:text-white transition-colors ml-auto';
+                shareBtn.innerHTML = '<i data-lucide="share-2" class="w-3.5 h-3.5"></i> Compartilhar';
+                metaRow.appendChild(shareBtn);
             }
-        });
+
+            // 2. Main beautiful block at the end of the text
+            const shareSection = document.createElement('div');
+            shareSection.className = 'share-section mt-16 pt-8 border-t border-white/5 reveal reveal-up active';
+            shareSection.innerHTML = `
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 bg-white/[0.02] border border-white/5 p-6 md:p-8 rounded-[2rem] shadow-2xl">
+                    <div>
+                        <h4 class="text-sm font-black uppercase tracking-widest text-[#E8842A] mb-1">Gostou deste artigo?</h4>
+                        <p class="text-xs text-primary-light/50 font-light">Compartilhe com amigos e ajude a divulgar viagens incríveis!</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2.5">
+                        <!-- WhatsApp -->
+                        <a href="https://api.whatsapp.com/send?text=${title}%20-%20${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#25D366] hover:text-white hover:border-[#25D366]/40 duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no WhatsApp">
+                            <i data-lucide="message-circle" class="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors"></i>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]/40 duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5 text-[#1877F2] group-hover:text-white transition-colors"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2]/40 duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-[#0A66C2] group-hover:text-white transition-colors"></i>
+                        </a>
+                        <!-- X/Twitter -->
+                        <a href="https://twitter.com/intent/tweet?text=${title}&url=${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-white hover:text-black hover:border-white duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no X (Twitter)">
+                            <i data-lucide="share-2" class="w-5 h-5 text-white/70 group-hover:text-black transition-colors"></i>
+                        </a>
+                        <!-- Copiar Link -->
+                        <button class="copy-url-btn group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#E8842A] hover:text-black hover:border-[#E8842A] duration-300 transition-all hover:scale-105 active:scale-95" title="Copiar Link para Área de Transferência">
+                            <i data-lucide="link" class="w-5 h-5 text-[#E8842A] group-hover:text-black transition-colors"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            // Insert cleanly right below the prose section
+            prose.parentNode.insertBefore(shareSection, prose.nextSibling);
+
+            // Direct event handler for premium dynamic copy link button
+            const copyBtn = shareSection.querySelector('.copy-url-btn');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', async () => {
+                    try {
+                        await navigator.clipboard.writeText(window.location.href);
+                        const originalHtml = copyBtn.innerHTML;
+                        copyBtn.innerHTML = '<i data-lucide="check" class="w-5 h-5 text-green-400"></i>';
+                        copyBtn.classList.remove('hover:bg-[#E8842A]', 'hover:text-black');
+                        copyBtn.classList.add('bg-green-500/10', 'border-green-500/30');
+                        if (window.lucide) window.lucide.createIcons();
+                        
+                        setTimeout(() => {
+                            copyBtn.innerHTML = originalHtml;
+                            copyBtn.classList.add('hover:bg-[#E8842A]', 'hover:text-black');
+                            copyBtn.classList.remove('bg-green-500/10', 'border-green-500/30');
+                            if (window.lucide) window.lucide.createIcons();
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Failed to copy link:', err);
+                    }
+                });
+            }
+
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        }
+    };
+    initArticleSharing();
+
+    // Unified Event Delegated Share Listener
+    document.addEventListener('click', async (e) => {
+        const btn = e.target.closest('.share-btn');
+        if (!btn) return;
+        
+        const url = window.location.href;
+        const title = document.title;
+        
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: title,
+                    url: url
+                });
+            } catch (err) {
+                console.log('Share cancelled or failed:', err);
+            }
+        } else {
+            // Fallback: Copy to clipboard
+            try {
+                await navigator.clipboard.writeText(url);
+                const originalContent = btn.innerHTML;
+                btn.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-green-400"></i> Copiado!';
+                if (window.lucide) window.lucide.createIcons();
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    if (window.lucide) window.lucide.createIcons();
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy link:', err);
+            }
+        }
     });
 
     // FAQ Accordion Logic
