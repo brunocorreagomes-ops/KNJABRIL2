@@ -174,7 +174,7 @@
                     <article class="blog-post reveal reveal-up group" data-category="Dicas de Viagem" data-date="2026-06-29">
                         <div class="blog-card">
                             <a href="ferias-julho-2026-nordeste-voos-viracopos/" class="block overflow-hidden rounded-[2.5rem] mb-6 relative aspect-[4/5] bg-white/5">
-                                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&q=80&w=1200" alt="Férias de Julho de 2026 no Nordeste" class="w-full h-full object-cover md:group-hover:scale-110 transition-transform duration-700" loading="lazy" referrerPolicy="no-referrer" decoding="async">
+                                <img src="https://raw.githubusercontent.com/brunocorreagomes-ops/KNJABRIL2/a508295fa074b1755c7585c8512b4c0357e5a897/ASSETSKNJ/KNJARTIGOFERIAS.png" alt="Férias de Julho de 2026 no Nordeste" class="w-full h-full object-cover md:group-hover:scale-110 transition-transform duration-700" loading="lazy" referrerPolicy="no-referrer" decoding="async">
                                 <div class="absolute inset-x-4 bottom-4 flex justify-between items-center z-10">
                                     <span class="bg-ink/60 backdrop-blur-md border border-white/10 text-white text-[8px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">5 min leitura</span>
                                 </div>
@@ -938,22 +938,42 @@
                 const end = start + itemsPerPage;
                 const paginatedPosts = filteredPosts.slice(start, end);
 
-                // Clear and Re-append
-                grid.innerHTML = '';
+                // Hide all posts instead of clearing innerHTML (prevents image loading freezes/cancellations)
+                posts.forEach(post => {
+                    post.classList.add('hidden');
+                    post.classList.remove('active');
+                });
                 
                 if (filteredPosts.length === 0) {
-                    grid.innerHTML = `
-                        <div class="col-span-full py-20 text-center">
+                    let emptyState = document.getElementById('blog-empty-state');
+                    if (!emptyState) {
+                        emptyState = document.createElement('div');
+                        emptyState.id = 'blog-empty-state';
+                        emptyState.className = 'col-span-full py-20 text-center';
+                        emptyState.innerHTML = `
                             <i data-lucide="search-x" class="w-12 h-12 text-white/10 mx-auto mb-4"></i>
                             <p class="text-white/40 uppercase tracking-widest text-[10px] font-bold">Nenhum artigo encontrado para sua busca</p>
-                            <button onclick="document.getElementById('search-blog').value = ''; updateGrid();" class="text-primary text-[10px] uppercase font-bold tracking-widest mt-4 underline">Limpar busca</button>
-                        </div>
-                    `;
-                    lucide.createIcons();
+                            <button id="clear-search-btn" class="text-primary text-[10px] uppercase font-bold tracking-widest mt-4 underline">Limpar busca</button>
+                        `;
+                        grid.appendChild(emptyState);
+                        const clearBtn = emptyState.querySelector('#clear-search-btn');
+                        if (clearBtn) {
+                            clearBtn.addEventListener('click', () => {
+                                searchInput.value = '';
+                                updateGrid();
+                            });
+                        }
+                        if (window.lucide) lucide.createIcons();
+                    } else {
+                        emptyState.classList.remove('hidden');
+                    }
                 } else {
+                    const emptyState = document.getElementById('blog-empty-state');
+                    if (emptyState) emptyState.classList.add('hidden');
+
                     paginatedPosts.forEach(post => {
-                        post.classList.remove('hidden', 'active');
-                        grid.appendChild(post);
+                        post.classList.remove('hidden');
+                        grid.appendChild(post); // moves it in order without destroying or reloading
                         setTimeout(() => post.classList.add('active'), 50);
                     });
                 }

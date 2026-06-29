@@ -277,6 +277,10 @@ section {
     .blog-card a {
         aspect-ratio: 4 / 5 !important;
     }
+    .blog-card img {
+        height: 100% !important;
+        object-fit: cover !important;
+    }
 }
 
 /* Hero Image Base Styles */
