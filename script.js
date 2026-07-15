@@ -239,23 +239,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="flex flex-wrap gap-2.5">
                         <!-- WhatsApp -->
                         <a href="https://api.whatsapp.com/send?text=${title}%20-%20${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#25D366] hover:text-white hover:border-[#25D366]/40 duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no WhatsApp">
-                            <i data-lucide="message-circle" class="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors"></i>
+                            <svg class="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.832.002-2.623-1.023-5.09-2.885-6.955C16.592 1.951 14.124.931 11.51.929c-5.43 0-9.855 4.415-9.858 9.835-.002 1.83.488 3.615 1.417 5.176l-.924 3.376 3.473-.912zm11.233-5.362c-.329-.165-1.947-.961-2.247-1.071-.3-.11-.518-.165-.736.165-.218.33-.842 1.071-1.033 1.291-.19.22-.382.247-.711.082-1.127-.565-1.927-1.002-2.686-2.301-.19-.33-.19-.544-.025-.709.148-.148.33-.385.495-.577.165-.192.22-.33.33-.55.11-.22.055-.412-.028-.577-.082-.165-.736-1.774-1.008-2.433-.265-.638-.535-.552-.736-.562-.19-.01-.408-.01-.626-.01-.218 0-.573.082-.873.412-.3.33-1.145 1.117-1.145 2.721 0 1.604 1.171 3.159 1.334 3.378.164.22 2.304 3.518 5.58 4.939.78.338 1.388.54 1.864.691.783.249 1.496.214 2.059.13.629-.094 1.947-.796 2.22-1.527.273-.731.273-1.359.191-1.492-.08-.133-.3-.218-.629-.383z"/></svg>
                         </a>
                         <!-- Facebook -->
                         <a href="https://www.facebook.com/sharer/sharer.php?u=${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]/40 duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no Facebook">
-                            <i data-lucide="facebook" class="w-5 h-5 text-[#1877F2] group-hover:text-white transition-colors"></i>
+                            <svg class="w-5 h-5 text-[#1877F2] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/sharing/share-offsite/?url=${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2]/40 duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no LinkedIn">
-                            <i data-lucide="linkedin" class="w-5 h-5 text-[#0A66C2] group-hover:text-white transition-colors"></i>
+                            <svg class="w-5 h-5 text-[#0A66C2] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
                         <!-- X/Twitter -->
                         <a href="https://twitter.com/intent/tweet?text=${title}&url=${url}" target="_blank" class="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-white hover:text-black hover:border-white duration-300 transition-all hover:scale-105 active:scale-95" title="Compartilhar no X (Twitter)">
-                            <i data-lucide="share-2" class="w-5 h-5 text-white/70 group-hover:text-black transition-colors"></i>
+                            <svg class="w-5 h-5 text-white group-hover:text-black transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         </a>
                         <!-- Copiar Link -->
                         <button class="copy-url-btn group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center bg-white/[0.01] hover:bg-[#E8842A] hover:text-black hover:border-[#E8842A] duration-300 transition-all hover:scale-105 active:scale-95" title="Copiar Link para Área de Transferência">
-                            <i data-lucide="link" class="w-5 h-5 text-[#E8842A] group-hover:text-black transition-colors"></i>
+                            <svg class="w-5 h-5 text-[#E8842A] group-hover:text-black transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                         </button>
                     </div>
                 </div>
@@ -271,16 +271,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     try {
                         await navigator.clipboard.writeText(window.location.href);
                         const originalHtml = copyBtn.innerHTML;
-                        copyBtn.innerHTML = '<i data-lucide="check" class="w-5 h-5 text-green-400"></i>';
+                        copyBtn.innerHTML = `<svg class="w-5 h-5 text-green-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
                         copyBtn.classList.remove('hover:bg-[#E8842A]', 'hover:text-black');
                         copyBtn.classList.add('bg-green-500/10', 'border-green-500/30');
-                        if (window.lucide) window.lucide.createIcons();
                         
                         setTimeout(() => {
                             copyBtn.innerHTML = originalHtml;
                             copyBtn.classList.add('hover:bg-[#E8842A]', 'hover:text-black');
                             copyBtn.classList.remove('bg-green-500/10', 'border-green-500/30');
-                            if (window.lucide) window.lucide.createIcons();
                         }, 2000);
                     } catch (err) {
                         console.error('Failed to copy link:', err);
