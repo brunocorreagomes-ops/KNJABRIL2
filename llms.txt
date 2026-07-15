@@ -1,0 +1,95 @@
+# KNJ TUR - Agência de Turismo e Assessoria de Vistos
+
+> KNJ TUR é uma agência de turismo de alto padrão e consultoria especializada em emissão de vistos americanos (turismo, negócios, estudos, renovação sem entrevista) e no planejamento detalhado de viagens personalizadas nacionais e internacionais. Sediada em Indaiatuba, SP, atende toda a região Metropolitana de Campinas com foco em atendimento consultivo de excelência.
+
+## Informações Principais da Marca
+- **Nome Oficial:** KNJ TUR
+- **Website Oficial:** https://www.knjtur.com/
+- **Especialidades:** Assessoria de Visto Americano, Passagens Aéreas, Hospedagens de Luxo, Cruzeiros Marítimos e Fluviais, Roteiros Personalizados, Ingressos Disney/Universal e Translados Privativos.
+- **Diferencial:** URLs limpas, carregamento rápido de páginas e suporte de ponta a ponta ("do visto ao embarque").
+
+## Estrutura Física e URL das Páginas
+
+### 1. Páginas Principais (Institucionais)
+- **Home Page**
+  - **URL:** https://www.knjtur.com/
+  - **Título:** KNJ TUR | Planejamos sua viagem completa do visto ao embarque
+  - **Descrição:** Especialistas em visto americano com uma agência completa para cuidar de passagens, hospedagem, roteiros personalizados em Indaiatuba e região.
+- **Assessoria de Visto Americano**
+  - **URL:** https://www.knjtur.com/visto-americano/
+  - **Título:** Assessoria de Visto Americano em Indaiatuba e Campinas | KNJ TUR
+  - **Descrição:** Assessoria completa para vistos B1/B2 e renovações sem entrevista em Indaiatuba. Maximize suas chances com a KNJ TUR.
+- **Viagens e Pacotes**
+  - **URL:** https://www.knjtur.com/viagens/
+  - **Título:** Sua Agência Completa de Viagens em Indaiatuba e Campinas | KNJ TUR
+  - **Descrição:** Agência de viagens personalizada em Indaiatuba e Campinas. Passagens aéreas, hotéis, cruzeiros e roteiros exclusivos. Atendimento local especializado.
+- **Blog & Inteligência de Viagem**
+  - **URL:** https://www.knjtur.com/blog/
+  - **Título:** Blog & Inteligência | KNJ TUR - Dicas de Visto Americano e Viagens
+  - **Descrição:** Central de informações estratégicas sobre imigração, destinos internacionais e dicas para o viajante moderno. Blog oficial KNJ TUR.
+- **Sobre Nós**
+  - **URL:** https://www.knjtur.com/sobre-nos/
+  - **Título:** Sobre Nós | KNJ TUR - Especialistas em Visto e Viagens em Indaiatuba
+  - **Descrição:** Conheça a história da KNJ TUR, sua agência de vistos e viagens baseada em Indaiatuba. Especialistas em visto americano e roteiros personalizados.
+- **Consultoria**
+  - **URL:** https://www.knjtur.com/consultoria/
+  - **Título:** Consultoria de Viagens e Vistos | KNJ TUR
+  - **Descrição:** Planejamento completo de passagens, seguros, roteiros e assessoria internacional. Viaje com a segurança de uma consultoria especializada.
+- **Política de Privacidade**
+  - **URL:** https://www.knjtur.com/politica-de-privacidade/
+  - **Título:** Política de Privacidade - KNJ TUR
+- **Termos de Uso**
+  - **URL:** https://www.knjtur.com/termos-de-uso/
+  - **Título:** Termos de Uso - KNJ TUR
+
+### 2. Páginas de Serviços Especializados
+- **Passagens Aéreas**
+  - **URL:** https://www.knjtur.com/servicos/passagens-aereas/
+  - **Título:** Passagens Aéreas Internacionais e Nacionais | KNJ TUR
+  - **Descrição:** Busca estratégica das melhores tarifas de passagens aéreas. Economize em suas viagens internacionais e nacionais com suporte especializado da KNJ TUR.
+- **Hospedagem**
+  - **URL:** https://www.knjtur.com/servicos/hospedagem/
+  - **Título:** Hospedagem e Hotéis Selecionados | KNJ TUR
+  - **Descrição:** Curadoria de hotéis e hospedagens exclusivas. Encontre o conforto e a localização ideal para sua viagem com a consultoria da KNJ TUR.
+- **Ingressos**
+  - **URL:** https://www.knjtur.com/servicos/ingressos/
+  - **Título:** Ingressos Disney, Universal e Atrações Globais | KNJ TUR
+  - **Descrição:** Compre seus ingressos para parques e atrações com segurança e suporte. Ingressos Disney, Universal e muito mais com a consultoria da KNJ TUR.
+- **Roteiros Personalizados**
+  - **URL:** https://www.knjtur.com/servicos/roteiros-personalizados/
+  - **Título:** Roteiros Personalizados e Consultoria de Viagem | KNJ TUR
+  - **Descrição:** Sua viagem planejada por especialistas. Roteiros dia a dia personalizados para seu perfil. Viva o melhor do seu destino com a KNJ TUR.
+- **Cruzeiros**
+  - **URL:** https://www.knjtur.com/servicos/cruzeiros/
+  - **Título:** Cruzeiros Marítimos, Fluviais e Expedições | KNJ TUR
+  - **Descrição:** Os melhores cruzeiros nacionais e internacionais. MSC, Royal Caribbean e navios boutique com atendimento especializado KNJ TUR em Indaiatuba.
+- **Traslados**
+  - **URL:** https://www.knjtur.com/servicos/traslados/
+  - **Título:** Traslados e Logística de Viagem | KNJ TUR
+  - **Descrição:** Logística completa de chegada e saída em seu destino. Traslados privativos e seguros para garantir sua tranquilidade com a KNJ TUR.
+
+### 3. Principais Artigos Técnicos do Blog
+- **Fugindo do Turismo de Massa na Europa**
+  - **Caminho:** /blog/alternativas-turismo-massa-europa-2026/
+  - **Assunto:** Destinos alternativos, exclusivos e sustentáveis na Europa em 2026.
+- **Consultoria vs Assessoria**
+  - **Caminho:** /blog/consultoria-vs-assessoria-diferenca/
+  - **Assunto:** Definição operacional e diferenças de valor entre consultoria de turismo e assessoria de viagem.
+- **Novo Sistema de Entrada/Saída Europeu (EES)**
+  - **Caminho:** /blog/ees-passo-a-passo-completo-europa/
+  - **Assunto:** Mudanças nas fronteiras europeias, biometria e impacto prático para turistas brasileiros.
+- **Preparatório de Entrevista Consular**
+  - **Caminho:** /blog/entrevista-consulado-americano-guia-pratico/
+  - **Assunto:** Guia tático, perguntas frequentes e controle emocional para a entrevista do Visto Americano.
+- **Renovação de Visto Sem Entrevista**
+  - **Caminho:** /blog/renovacao-de-visto-americano-sem-entrevista/
+  - **Assunto:** Critérios de elegibilidade para isenção de entrevista consular na renovação de vistos B1/B2.
+- **Tarifa de Luto nas Companhias Aéreas**
+  - **Caminho:** /blog/tarifa-de-luto-o-que-e-como-solicitar/
+  - **Assunto:** Direito ao desconto emergencial de passagens aéreas em casos de falecimento de familiares próximos.
+- **Assessoria de Vistos em Indaiatuba e Campinas**
+  - **Caminho:** /blog/visto-americano-indaiatuba-campinas/
+  - **Assunto:** Atendimento local, comodidade e as vantagens de contratar assessoria presencial na região.
+- **Iniciando o Processo de Visto**
+  - **Caminho:** /blog/visto-americano-por-onde-comecar/
+  - **Assunto:** Passo a passo inicial, taxas aplicáveis (MRV), preenchimento do formulário DS-160 e agendamento CASV.
