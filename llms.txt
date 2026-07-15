@@ -87,6 +87,9 @@
 - **Tarifa de Luto nas Companhias Aéreas**
   - **Caminho:** /blog/tarifa-de-luto-o-que-e-como-solicitar/
   - **Assunto:** Direito ao desconto emergencial de passagens aéreas em casos de falecimento de familiares próximos.
+- **Viagem para as Ilhas Lofoten, Noruega**
+  - **Caminho:** /blog/viagem-para-ilhas-lofoten-noruega/
+  - **Assunto:** Descoberta de verão nas Ilhas Lofoten, focando no Sol da Meia-Noite, rorbuer vermelhas e praias árticas de areia branca.
 - **Assessoria de Vistos em Indaiatuba e Campinas**
   - **Caminho:** /blog/visto-americano-indaiatuba-campinas/
   - **Assunto:** Atendimento local, comodidade e as vantagens de contratar assessoria presencial na região.
