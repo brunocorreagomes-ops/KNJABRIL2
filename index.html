@@ -91,6 +91,71 @@
       },
       "sameAs": [
         "https://www.instagram.com/knjtur"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Gabriela Lopes"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Tivemos uma experiência excelente com a KNJ TUR. O Kenji nos auxiliou em absolutamente todos os detalhes da viagem, sempre com muita atenção, suporte e agilidade. Mesmo diante de imprevistos, bastava uma mensagem para tudo ser resolvido rapidamente. O atendimento foi extremamente humano, personalizado e nos trouxe muita segurança antes e durante toda a viagem..."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Murilo Camargo"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Recebi um excelente atendimento, rápido, prático e com todas as informações que eu precisava. Passagens aéreas, reservas de hotel, dicas de cada destino..."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Kaio Oliveira"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Kenji é um excelente profissional: entende exatamente o que você precisa e se dedica a encontrar as melhores opções de roteiros e acomodações."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Eduardo Bergamo"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Falei diretamente com o Kenji que me orientou em diversos detalhes para o agendamento e preparação. Agência excelente e atendimento impecável."
+        }
       ]
     }
     </script>
@@ -102,7 +167,7 @@
     <header id="main-header" class="fixed top-0 left-0 right-0 z-[110] bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
         <div class="container flex justify-between items-center text-white">
             <a href="index.html" class="flex items-center gap-1 group" aria-label="Voltar para Home">
-                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-8 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-8 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer" fetchpriority="high" width="450" height="800" loading="lazy">
             </a>
             
             <div class="flex items-center gap-4 md:gap-10">
@@ -131,7 +196,7 @@
     <!-- SECTION 2: MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 bg-ink z-[120] flex flex-col opacity-0 invisible transition-all duration-500 overflow-y-auto">
         <div class="flex justify-between items-center px-6 h-20 border-b border-white/5">
-            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-7 w-auto filter brightness-110">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-7 w-auto filter brightness-110" width="450" height="800" loading="lazy">
             <button id="close-menu" class="text-primary p-2 focus:outline-none flex items-center gap-2" aria-label="Fechar Menu">
                 <span class="text-[10px] font-black uppercase tracking-widest">Fechar</span>
                 <i data-lucide="x" class="w-7 h-7"></i>
@@ -163,7 +228,7 @@
         <section class="relative min-h-screen flex items-center overflow-hidden pt-32 lg:pt-0">
             <!-- Background Image with cinematic overlay -->
             <div class="absolute inset-0 z-0">
-                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Aeroporto ao amanhecer - Viagem de Luxo" class="w-full h-full object-cover opacity-60 animate-fade-in-soft" referrerPolicy="no-referrer" fetchpriority="high" decoding="sync">
+                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Aeroporto ao amanhecer - Viagem de Luxo" class="w-full h-full object-cover opacity-60 animate-fade-in-soft" referrerPolicy="no-referrer" fetchpriority="high" decoding="sync" width="1024" height="1536">
                 <div class="absolute inset-0 hero-gradient"></div>
                 <div class="absolute inset-0 bg-ink/30"></div>
             </div>
@@ -222,7 +287,7 @@
                             <div class="absolute -inset-4 border border-primary/20 rounded-[2rem] -rotate-3"></div>
                             <div class="absolute -inset-4 border border-gold/10 rounded-[2rem] rotate-3"></div>
                             <div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] group">
-                                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Viagem de Luxo - KNJ TUR" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" fetchpriority="high" decoding="sync">
+                                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Viagem de Luxo - KNJ TUR" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" fetchpriority="high" decoding="sync" width="1024" height="1536" loading="lazy">
                                 <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
                                 <div class="absolute bottom-8 left-8 right-8">
                                     <div class="h-[1px] w-12 bg-primary mb-4"></div>
@@ -545,9 +610,9 @@
                         </p>
                         <div class="flex items-center gap-6 md:gap-8">
                             <div class="flex -space-x-4">
-                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWbD1CvnX3_YJDIjKQLV_3k4yx8RfsYn4yIk_avkBws573VqXVtw=s120-c" alt="Client" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-ink object-cover" referrerPolicy="no-referrer">
-                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWPvSSn83wxX_2AUv6ns8HdvnDfrO4FhrwnTGyukxFGI-IndVJ0=s120-c" alt="Client" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-ink object-cover" referrerPolicy="no-referrer">
-                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXKeFR87PvS0ojTyvR2Ua-5AcUIb6FhfZkZ3hqWnpAuAElYX5Iytw=s120-c" alt="Client" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-ink object-cover" referrerPolicy="no-referrer">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWbD1CvnX3_YJDIjKQLV_3k4yx8RfsYn4yIk_avkBws573VqXVtw=s120-c" alt="Client" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-ink object-cover" referrerPolicy="no-referrer" width="120" height="120" loading="lazy">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWPvSSn83wxX_2AUv6ns8HdvnDfrO4FhrwnTGyukxFGI-IndVJ0=s120-c" alt="Client" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-ink object-cover" referrerPolicy="no-referrer" width="120" height="120" loading="lazy">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXKeFR87PvS0ojTyvR2Ua-5AcUIb6FhfZkZ3hqWnpAuAElYX5Iytw=s120-c" alt="Client" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-ink object-cover" referrerPolicy="no-referrer" width="120" height="120" loading="lazy">
                             </div>
                             <div class="text-[9px] md:text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">
                                 Confiado por <br><span class="text-primary">+ 500 Famílias</span>
@@ -624,7 +689,7 @@
                     
                     <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-12 md:mb-16 p-6 bg-white/40 backdrop-blur-sm rounded-[2rem] border border-ink/5 w-fit mx-auto">
                         <div class="flex items-center gap-3 border-b md:border-b-0 md:border-r border-ink/10 pb-4 md:pb-0 md:pr-6">
-                            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="h-5 md:h-6" referrerPolicy="no-referrer">
+                            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="h-5 md:h-6" referrerPolicy="no-referrer" width="184" height="60" loading="lazy">
                             <div class="flex gap-1">
                                 <i data-lucide="star" class="text-yellow-500 fill-yellow-500 w-4 h-4"></i>
                                 <i data-lucide="star" class="text-yellow-500 fill-yellow-500 w-4 h-4"></i>
@@ -647,7 +712,7 @@
                         <p class="text-ink/70 font-light leading-relaxed italic mb-8 md:mb-12 relative z-10 text-xs md:text-sm">"Tivemos uma experiência excelente com a KNJ TUR. O Kenji nos auxiliou em absolutamente todos os detalhes da viagem, sempre com muita atenção, suporte e agilidade. Mesmo diante de imprevistos, bastava uma mensagem para tudo ser resolvido rapidamente. O atendimento foi extremamente humano, personalizado e nos trouxe muita segurança antes e durante toda a viagem..."</p>
                         
                         <div class="flex items-center gap-4 md:gap-5 relative z-10">
-                            <img src="https://i.ibb.co/ZR52FzsJ/IMG-8852.png" alt="Gabriela Lopes" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer">
+                            <img src="https://i.ibb.co/ZR52FzsJ/IMG-8852.png" alt="Gabriela Lopes" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer" width="180" height="180" loading="lazy">
                             <div>
                                 <h5 class="text-ink font-bold text-sm md:text-base leading-tight">Gabriela Lopes</h5>
                                 <span class="text-primary font-bold text-[9px] uppercase tracking-widest font-black">Cliente KNJ</span>
@@ -664,7 +729,7 @@
                         <p class="text-ink/70 font-light leading-relaxed italic mb-8 md:mb-12 relative z-10 text-xs md:text-sm">"Recebi um excelente atendimento, rápido, prático e com todas as informações que eu precisava. Passagens aéreas, reservas de hotel, dicas de cada destino..."</p>
                         
                         <div class="flex items-center gap-4 md:gap-5 relative z-10">
-                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWbD1CvnX3_YJDIjKQLV_3k4yx8RfsYn4yIk_avkBws573VqXVtw=s120-c" alt="Murilo A. de Camargo" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWbD1CvnX3_YJDIjKQLV_3k4yx8RfsYn4yIk_avkBws573VqXVtw=s120-c" alt="Murilo A. de Camargo" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer" width="120" height="120" loading="lazy">
                             <div>
                                 <h5 class="text-ink font-bold text-sm md:text-base leading-tight">Murilo Camargo</h5>
                                 <span class="text-primary font-bold text-[9px] uppercase tracking-widest">Local Guide</span>
@@ -681,7 +746,7 @@
                         <p class="text-ink/70 font-light leading-relaxed italic mb-8 md:mb-12 relative z-10 text-xs md:text-sm">"Kenji é um excelente profissional: entende exatamente o que você precisa e se dedica a encontrar as melhores opções de roteiros e acomodações."</p>
                         
                         <div class="flex items-center gap-4 md:gap-5 relative z-10">
-                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWPvSSn83wxX_2AUv6ns8HdvnDfrO4FhrwnTGyukxFGI-IndVJ0=s120-c" alt="Kaio Oliveira" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWPvSSn83wxX_2AUv6ns8HdvnDfrO4FhrwnTGyukxFGI-IndVJ0=s120-c" alt="Kaio Oliveira" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer" width="120" height="120" loading="lazy">
                             <div>
                                 <h5 class="text-ink font-bold text-sm md:text-base leading-tight">Kaio Oliveira</h5>
                                 <span class="text-primary font-bold text-[9px] uppercase tracking-widest font-black">Cliente KNJ</span>
@@ -698,7 +763,7 @@
                         <p class="text-ink/70 font-light leading-relaxed italic mb-8 md:mb-12 relative z-10 text-xs md:text-sm">"Falei diretamente com o Kenji que me orientou em diversos detalhes para o agendamento e preparação. Agência excelente e atendimento impecável."</p>
                         
                         <div class="flex items-center gap-4 md:gap-5 relative z-10">
-                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXKeFR87PvS0ojTyvR2Ua-5AcUIb6FhfZkZ3hqWnpAuAElYX5Iytw=s120-c" alt="Eduardo Bergamo" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXKeFR87PvS0ojTyvR2Ua-5AcUIb6FhfZkZ3hqWnpAuAElYX5Iytw=s120-c" alt="Eduardo Bergamo" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary/20 p-1 object-cover" referrerPolicy="no-referrer" width="120" height="120" loading="lazy">
                             <div>
                                 <h5 class="text-ink font-bold text-sm md:text-base leading-tight">Eduardo Bergamo</h5>
                                 <span class="text-primary font-bold text-[9px] uppercase tracking-widest">Local Guide</span>
@@ -720,7 +785,7 @@
             <div class="container relative z-10 text-center">
                 <div class="reveal reveal-up flex flex-col items-center">
                     <div class="w-14 md:w-16 h-14 md:h-16 bg-white/5 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-8 border border-white/10">
-                         <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-6 h-6 md:w-8 md:h-8 object-contain" referrerPolicy="no-referrer">
+                         <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-6 h-6 md:w-8 md:h-8 object-contain" referrerPolicy="no-referrer" width="512" height="512" loading="lazy">
                     </div>
                     <h2 class="font-display font-black text-white mb-6 tracking-tighter leading-tight">Acompanhe nossos <br><span class="text-primary italic">resultados diários</span></h2>
                     <p class="text-primary-light/60 text-base md:text-xl font-light mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -741,7 +806,7 @@
         <!-- SECTION 5: FINAL CTA -->
         <section class="relative overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop" alt="Destino de luxo" class="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop" alt="Destino de luxo" class="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" width="2073" height="1378">
                 <div class="absolute inset-0 bg-ink/75"></div>
             </div>
             
@@ -763,7 +828,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24 border-b border-white/5 pb-16 md:pb-24">
                 <div class="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-3 mb-6 md:mb-8">
-                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto" referrerPolicy="no-referrer">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto" referrerPolicy="no-referrer" width="450" height="800" loading="lazy">
                     </a>
                     <p class="text-white/40 text-[11px] leading-loose max-w-[280px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
                 </div>
@@ -792,7 +857,7 @@
                     <h5 class="text-primary uppercase tracking-widest text-[10px] font-black">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-ink transition-all overflow-hidden p-2.5">
-                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer" loading="lazy">
+                             <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer" loading="lazy" width="512" height="512">
                         </a>
                         <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
                             <i data-lucide="message-circle" class="w-5 h-5"></i>
@@ -823,7 +888,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
